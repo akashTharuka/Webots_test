@@ -25,7 +25,7 @@ nav{
 }
 
 header{
-    background: url('img/wallpapersden.com_cool-4k-pattern_right_bottom.jpg');
+    background: url('/img/wallpapersden.com_cool-4k-pattern_right_bottom.jpg');
     background: cover;
 }
 
@@ -220,7 +220,7 @@ header{
 }
 
 .row.popup-gallery .col-lg-4:nth-child(1) .image{
-    background: url('img/portfolio/thumbnails/1.jpg'), url('img/mask.png') no-repeat;
+    background: url('/img/portfolio/thumbnails/1.jpg'), url('/img/mask.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -266,7 +266,7 @@ header{
 }
 
 .fixed {
-    background-image: url('img/fixed_background.jpg');
+    background-image: url('/img/fixed_background.jpg');
     z-index: -1;
     position: fixed;
     display: block;
