@@ -11,13 +11,17 @@
     outline: none !important;
     border: none;
 }
-*:focus{
-    display: none;
-}
 
 body{
     font-family: 'Poppins', sans-serif;
     background: var(--background-black);
+    scrollbar-width: none;
+    /* -ms-overflow-style: none;
+    overflow-x: hidden; */
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 nav{
@@ -67,12 +71,13 @@ header{
 /* neon button with border animation */
 
 .neon-button-three{
+    position: relative;
     overflow: hidden;
     color: var(--neon-btn-one);
     width: 400px;
-    transition: .2s;
-    transition-delay: 1s;
-    border: 2px var(--neon-btn-one) solid;
+    transition: .5s;
+    /* transition-delay: 1s; */
+    /* border: 2px var(--neon-btn-one) solid; */
 }
 .neon-button-three:hover{
     border: none;
@@ -91,10 +96,15 @@ header{
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent, var(--neon-btn-one));
+    animation: animate1 2s linear infinite;
 }
-.neon-button-three:hover span:nth-child(1){
-    left: 100%;
-    transition: 1s;
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
 }
 
 /* bottom border */
@@ -104,12 +114,22 @@ header{
     width: 100%;
     height: 2px;
     background: linear-gradient(270deg, transparent, var(--neon-btn-one));
+    animation: animate3 2s linear infinite;
+    animation-delay: 1s;
 }
-.neon-button-three:hover span:nth-child(3){
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%, 100%{
+        right: 100%;
+    }
+}
+/* .neon-button-three:hover span:nth-child(3){
     right: 100%;
     transition: 1s;
     transition-delay: 0.5s;
-}
+} */
 
 /* right border */
 .neon-button-three span:nth-child(2){
@@ -118,12 +138,22 @@ header{
     width: 2px;
     height: 100%;
     background: linear-gradient(180deg, transparent, var(--neon-btn-one));
+    animation: animate2 2s linear infinite;
+    animation-delay: 0.5s;
 }
-.neon-button-three:hover span:nth-child(2){
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
+    }
+}
+/* .neon-button-three:hover span:nth-child(2){
     top: 100%;
     transition: 1s;
     transition-delay: 0.25s;
-}
+} */
 
 /* left border */
 .neon-button-three span:nth-child(4){
@@ -132,12 +162,22 @@ header{
     width: 2px;
     height: 100%;
     background: linear-gradient(360deg, transparent, var(--neon-btn-one));
+    animation: animate4 2s linear infinite;
+    animation-delay: 1.5s;
 }
-.neon-button-three:hover span:nth-child(4){
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%, 100%{
+        bottom: 100%;
+    }
+}
+/* .neon-button-three:hover span:nth-child(4){
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
-}
+} */
 
 #about,
 #timeline{
@@ -286,6 +326,10 @@ header{
     opacity: 1;
 }
 
+/* countdown */
+
+
+
 
 /* .custom-shape-divider-bottom-1640699034 {
     position: absolute;
@@ -308,16 +352,9 @@ header{
     fill: #021222;
 } */
 
-
-@media only screen and (max-width: 460px){
-    .topic{
-        letter-spacing: .3rem;
-    }
-}
-
-@media only screen and (max-width: 580px){
-    .topic{
-        letter-spacing: .5rem;
+@media only screen and (max-width: 1000px){
+    .neon-button-two:hover:before{
+        display: none;
     }
 }
 
@@ -328,18 +365,39 @@ header{
     }
 }
 
-@media only screen and (max-width: 1000px){
-    .neon-button-two:hover:before{
-        display: none;
+@media only screen and (max-width: 580px){
+    .topic{
+        letter-spacing: .5rem;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .topic{
+        letter-spacing: .3rem;
+    }
+}
+
+@media only screen and (max-width: 410px){
+    .topic{
+        letter-spacing: 0rem;
+        font-size: 1.8rem;
+    }
+    .blockquote p{
+        font-size: .9rem;
+    }
+    .neon-button-two,
+    .neon-button-three{
+        width: 230px;
+        font-size: .8rem;
     }
 }
 
 /* scrolling */
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     display: none;
     scroll-behavior: smooth;
-}
+} */
 
 .scroll-margin{
     scroll-margin-top: 9em;

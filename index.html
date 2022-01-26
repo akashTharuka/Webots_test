@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/homepage.css">
 
+    <!-- flipclock styles -->
+    <link rel="stylesheet" href="css/flipclock.css">
+
     <!-- magnific-popup stylesheet -->
     <link rel="stylesheet" href="node_modules/magnific-popup/dist/magnific-popup.css">
 
-    <title>IESL Robo Games | 2021</title>
+    <title>IESL Robo Games | 21/22</title>
 </head>
-<body id="page-top">
+<body id="page-top" class="m-0 p-0">
     <div id="content">
         <!-- navbar -->
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark mb-5 fixed-top">
-            <div class="container-xxl">
+        <nav id="navbar" class="navbar navbar-expand-xl navbar-dark mb-5" role="navigation">
+            <div class="container-fluid">
                 <!-- navbar brand -->
                 <a class="navbar-brand" href="#page-top"><img  class="logo img-fluid" src="img/logos/IESL_Logo_2021.png" alt="IESL Robogames 2020"></a>
 
@@ -29,7 +32,7 @@
 
                 <!-- navbar links -->
                 <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav mx-auto">
                         <li class="nav-item mx-3">
                             <a class="nav-link" href="#about">About</a>
                         </li>
@@ -38,6 +41,9 @@
                         </li>
                         <li class="nav-item mx-3">
                             <a class="nav-link" href="#timeline">Timeline</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#register">Register</a>
                         </li>
                         <li class="nav-item mx-3">
                             <a class="nav-link" href="#portfolio">Gallery</a>
@@ -247,6 +253,48 @@
 
         </section>
 
+        <!-- register section -->
+        <section id="register" class="my-5 p-4 scroll-margin">
+            <div class="container my-5">
+                <div class="row mt-5">
+                    <div class="col-lg-8 mx-auto text-center text-muted reveal-bottom">
+                        <h2 class="topic display-6 section-heading text-white text-uppercase">
+                            Register</h2>
+                        <hr>
+                        <a class="neon-button btn btn-outline-warning p-3 px-5 my-5 mx-auto reveal-flip" href="#" target="_blank">Register Now!!!</a>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-lg-8 mx-auto text-center text-muted reveal-bottom">
+                        <hr>
+                        <h2 class="topic lead section-heading text-danger text-uppercase reveal-rotate">
+                            Registration Closes In:</h2>
+                        <hr>
+                    </div>
+                </div>
+                <!-- <div class="row mt-5 justify-content-center">
+                    <div class="col-sm-2 time-circle text-center reveal-rotate">
+                        <p class="days display-5 text-warning"></p>
+                        <span class="text-danger">days</span>
+                    </div>
+                    <div class="col-sm-2 time-circle text-center reveal-rotate-400">
+                        <p class="hours display-5 text-warning"></p>
+                        <span class="text-danger">hours</span>
+                    </div>
+                    <div class="col-sm-2 time-circle text-center reveal-rotate-600">
+                        <p class="minutes display-5 text-warning"></p>
+                        <span class="text-danger">minutes</span>
+                    </div>
+                    <div class="col-sm-2 time-circle text-center reveal-rotate-800">
+                        <p class="seconds display-5 text-warning"></p>
+                        <span class="text-danger">seconds</span>
+                    </div>
+                </div> -->
+                <div class="clock row mt-5 mx-auto justify-content-center"></div>
+                <div class="message"></div>
+            </div>
+        </section>
+
         <!-- portfolio section -->
         <section id="portfolio" class="my-5 p-4 container reveal-bottom scroll-margin">
 
@@ -270,32 +318,32 @@
                 </div>
 
                 <div class="row no-gutters popup-gallery">
-                    <div class="col-lg-4 col-sm-6 my-3 reveal-right">
+                    <div class="col-lg-4 col-sm-6 my-3">
                         <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
                             <div class="image img-fluid"></div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-3 reveal-flip">
+                    <div class="col-lg-4 col-sm-6 my-3">
                         <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
                             <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-3 reveal-left">
+                    <div class="col-lg-4 col-sm-6 my-3">
                         <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
                             <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-3 reveal-right">
+                    <div class="col-lg-4 col-sm-6 my-3">
                         <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
                             <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-3 reveal-rotate">
+                    <div class="col-lg-4 col-sm-6 my-3">
                         <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
                             <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-3 reveal-left">
+                    <div class="col-lg-4 col-sm-6 my-3">
                         <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
                             <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
                         </a>
@@ -491,5 +539,33 @@
     <!-- magnific popup -->
     <script src="node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
     <script src="js/image_popup.js"></script>
+
+    <!-- countdown -->
+    <!-- <script src="js/countdown.js"></script> -->
+
+    <!-- flipclock cdn -->
+    <script src="js/flipclock.min.js"></script>
+    <!-- <script type="text/javascript">
+		var clock;
+		
+		$(document).ready(function() {
+			var clock;
+
+			clock = $('.clock').FlipClock({
+		        clockFace: 'DailyCounter',
+		        autoStart: false,
+		        callbacks: {
+		        	stop: function() {
+		        		$('.message').html('Time\'s up buddy')
+		        	}
+		        }
+		    });
+				    
+		    clock.setTime(5);
+		    clock.setCountdown(true);
+		    clock.start();
+
+		});
+	</script> -->
 </body>
 </html>
