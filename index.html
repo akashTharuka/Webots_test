@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
     <!-- homepage styles -->
     <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/splitScreenSlider.css">
 
     <!-- flipclock styles -->
     <link rel="stylesheet" href="css/flipclock.css">
@@ -90,19 +94,50 @@
 
         <!-- about section -->
         <section id="about" class="my-5 p-4 scroll-margin">
-            <div class="container">
+            <section id="wrapper" class="skewed">
+                <div class="layer bottom-section">
+                    <div class="content-wrap">
+                        <div class="content-body mx-lg-4 p-4">
+                            <h2 class="topic display-6 section-heading text-muted text-uppercase reveal-right">Purpose</h2>
+                            <hr class="light my-4">
+                            <p class="my-4 reveal-right text-muted">Most of the Sri Lankan students are interested in robotics technology the main constraint for them is lack of knowledge and facilities. Only very few schools have well equipped ICT laboratories, electronic equipment and resources
+                                persons. Main idea of organizing this event is to provide assistance for students to learn the art of robot development and ultimately give them an opportunity to make use of what they have learnt and showcase their talents.</p>
+                        </div>
+                        <img src="img/bumblebee.png" alt="pc1">
+                    </div>
+                </div>
+        
+                <div class="layer top-section">
+                    <div class="content-wrap">
+                        <div class="content-body mx-lg-4 p-4">
+                            <h2 class="topic display-6 section-heading text-dark text-uppercase reveal-left">About IESL Robogames</h2>
+                            <hr class="light my-4">
+                            <p class="my-4 reveal-left">&quot;IESL RoboGames&quot; is an annual competition organized by the Information Technology and Communications Engineering Sectional Committee of the Institution of Engineers, Sri Lanka in collaboration with Department of Computer
+                                Science and Engineering, University of Moratuwa, with the objective of promoting and recognizing the talents and skills of the next generation of professionals. The competition will be held in two categories; School Category
+                                and Undergraduate Category. For the school category there will be a series of workshops and awareness programs held in order to introduce the concept of robotics into school&apos;s educational activities. This will provide
+                                an opportunity to promote their creativity and improve their learning efficiency, encouraging them to be future engineers and inventors.</p>
+                        </div>
+                        <img src="img/bumblebee.png" alt="pc1">
+                    </div>
+                </div>
+        
+                <div class="handle-one"></div>
+                <div class="handle-two"></div>
+            </section>
+
+            <div class="container d-md-none">
                 <div class="row mt-5">
-                    <div class="col-lg-8 mx-auto text-center text-muted">
-                        <h2 class="topic display-6 section-heading text-white text-uppercase reveal-right">About IESL Robogames</h2>
+                    <div class="col-lg-8 mx-auto text-center text-muted reveal-bottom">
+                        <h2 class="topic display-6 section-heading text-white text-uppercase">About IESL Robogames</h2>
                         <hr class="light my-4">
-                        <p class="my-4 reveal-right">&quot;IESL RoboGames&quot; is an annual competition organized by the Information Technology and Communications Engineering Sectional Committee of the Institution of Engineers, Sri Lanka in collaboration with Department of Computer
+                        <p class="my-4">&quot;IESL RoboGames&quot; is an annual competition organized by the Information Technology and Communications Engineering Sectional Committee of the Institution of Engineers, Sri Lanka in collaboration with Department of Computer
                             Science and Engineering, University of Moratuwa, with the objective of promoting and recognizing the talents and skills of the next generation of professionals. The competition will be held in two categories; School Category
                             and Undergraduate Category. For the school category there will be a series of workshops and awareness programs held in order to introduce the concept of robotics into school&apos;s educational activities. This will provide
                             an opportunity to promote their creativity and improve their learning efficiency, encouraging them to be future engineers and inventors.</p>
 
-                        <h2 class="topic display-6 section-heading text-white text-uppercase reveal-left">Purpose</h2>
+                        <h2 class="topic display-6 section-heading text-white text-uppercase">Purpose</h2>
                         <hr class="light my-4">
-                        <p class="my-4 reveal-left">Most of the Sri Lankan students are interested in robotics technology the main constraint for them is lack of knowledge and facilities. Only very few schools have well equipped ICT laboratories, electronic equipment and resources
+                        <p class="my-4">Most of the Sri Lankan students are interested in robotics technology the main constraint for them is lack of knowledge and facilities. Only very few schools have well equipped ICT laboratories, electronic equipment and resources
                             persons. Main idea of organizing this event is to provide assistance for students to learn the art of robot development and ultimately give them an opportunity to make use of what they have learnt and showcase their talents.</p>
                     </div>
                 </div>
@@ -456,55 +491,68 @@
         <!-- contact section -->
         <section id="contact" class="my-5 p-4 scroll-margin">
             <div class="container text-center reveal-bottom">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <div class="col-lg-8 mx-auto text-center text-muted reveal-bottom">
-                            <h2 class="topic display-6 section-heading text-white text-uppercase">
-                                Contact Us</h2>
-                            <hr class="my-4">
-                        </div>
-                        <hr class="my-4">
+                <div class="row text-muted">
+                    <h2 class="topic display-6 section-heading text-white text-uppercase">
+                        Contact Us</h2>
+                    <hr class="my-4">
+                    <div class="col-sm-8 col-md-6 mx-0 text-start">
+                        
                         <p class="lead text-muted my-4">For further inquiries and clarifications, feel free to contact us.</p>
-                        <address class="lead text-light my-4">
+                        <address class="lead text-warning my-4">
                             Department of Computer Science and Engineering,<br />
                             University of Moratuwa,<br />
                             Katubedda,<br />
                             Sri Lanka.
                         </address>
 
+                        <div class="icons my-4 d-flex">
+                            <a href="https://www.facebook.com/pg/ieslrobogame/" class="me-4"><i class="fab fa-facebook-f"></i></a>
+                            <a href="mailto:rob@cse.mrt.ac.lk" class="me-4"><i class="fas fa-envelope"></i></a>
+                            <a href="https://wa.me/+94715694899" class="me-4"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+
                     </div>
-                </div>
-                <div class="row justify-content-center my-5">
-                    <div class="contact-left col-lg-4 text-center reveal-left">
-                        <img src="img/contacts/husni.jpg" class="profile-img img-fluid rounded shadow-lg my-1" alt="Husni">
-                        <p class="lead text-light">Husni Faiz<p/>
-                        <a class="tel" href="tel:+94777483844">
-                            <i class="bi bi-telephone m-2 p-2"></i>
-                            +94777483844
-                        </a>
-                    </div>
-                    <div class="contact-right col-lg-4 text-center reveal-right">
-                        <img src="img/contacts/dasith.jpg" class="profile-img img-fluid rounded shadow-lg my-1" alt="Dasith">
-                        <p class="lead text-light">Dasith Edirisinghe<p/>
-                        <a class="tel" href="tel:+94772890264" class="lead">
-                            <i class="bi bi-telephone m-2 p-2"></i>
-                            +94772890264
-                        </a>
-                    </div>
-                </div>
-                <br>
-                <div class="row mt-1">
-                    <div class="col-md-4 offset-md-4 mx-auto text-center reveal-rotate">
-                        <a href="mailto:rob@cse.mrt.ac.lk" class="email lead my-3">
-                            <i class="bi bi-envelope m-2 p-2"></i>
-                            robo@cse.mrt.ac.lk
-                        </a>
-                    </div>
-                    <div class="col-md-4 offset-md-4 mx-auto text-center reveal-rotate">
-                        <a class="facebook-link lead" href="https://www.facebook.com/pg/ieslrobogame/" target="_blank">
-                            <i class="bi bi-facebook text-primary m-2 p-2"></i>
-                            Connect with us
-                        </a>
+
+                    <div class="col-sm-8 col-md-6 mx-0 my-4 text-start">
+                        
+                        <form class="my-1">
+                            <label for="email" class="form-label">Email Address:</label>
+                            <div class="input-group mb-2">
+                                <span class="input-group-text">
+                                    <i class="bi bi-envelope-fill text-secondary"></i>
+                                </span>
+                                <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+                                <!-- tooltip -->
+                                <span class="input-group-text">
+                                    <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                                      <i class="bi bi-question-circle text-muted"></i>
+                                    </span>
+                                </span>
+                            </div>
+
+                            <label for="name" class="form-label">Name:</label>
+                            <div class="mb-2 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-person-fill text-secondary"></i>
+                                </span>
+                                <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+                                <!-- tooltip -->
+                                <span class="input-group-text">
+                                    <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                    </span>
+                                </span>
+                            </div>
+
+                            <div class="mb-1 mt-5 form-floating">
+                                <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+                                <label for="query">Your query...</label>
+                            </div>
+                            <div class="mb-4 text-center">
+                                <button type="submit" class="neon-button btn btn-outline-warning py-2 px-5 my-4">Submit</button>
+                            </div>
+                        </form>
+
                     </div>
                 </div>
             </div>
@@ -518,6 +566,16 @@
 
     <!-- bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- tooltips in contact us form -->
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+          new bootstrap.Tooltip(t)
+        })
+    </script>
+
+    <script src="js/splitScreenSlider.js"></script>
 
     <!-- countdown -->
     <script src="js/countdown.js"></script>

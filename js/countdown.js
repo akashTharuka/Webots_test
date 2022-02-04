@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 31, 2022 00:00:00").getTime();
+var countDownDate = new Date("Feb 4, 2022 17:19:00").getTime();
 
 var daySpan = document.querySelector('.days');
 var hourSpan = document.querySelector('.hours');
@@ -30,6 +30,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("clock").innerHTML = "EXPIRED";
+    document.querySelector('.clock.topic').innerText = "EXPIRED";
+    document.querySelector('.clock-display').classList.add('d-none');
   }
 }, 1000);
