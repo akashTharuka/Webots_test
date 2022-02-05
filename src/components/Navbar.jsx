@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from "react-router-hash-link";
 
-import logo from '../images/logos/IESL_Logo_2021.png';
+import { images } from '../javascript/imageImports';
 
 const Navbar = () => {
     return(
-        <nav id="navbar" className="navbar navbar-expand-xl navbar-dark" role="navigation">
+        <nav id="navbar" className="navbar navbar-expand-xl navbar-dark fixed-top" role="navigation">
             <div className="container-fluid">
                 {/* navbar brand */}
-                <Link className="navbar-brand" to="#page-top"><img  className="logo img-fluid" src={logo} alt="IESL Robogames 2020" /></Link>
+                <HashLink className="navbar-brand" smooth to="#page-top"><img  className="logo img-fluid" src={images.logo} alt="IESL Robogames 2020" /></HashLink>
 
                 {/* toggle button for mobile nav */}
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,28 +19,28 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                     <ul className="navbar-nav mx-auto">
                         <li className="nav-item mx-3">
-                            <Link className="nav-link" to="#about">About</Link>
+                            <HashLink className="nav-link" smooth to="#about">About</HashLink>
                         </li>
                         <li className="nav-item mx-3">
-                            <Link className="nav-link" to="#challengedetails">Challenge Details</Link>
+                            <HashLink className="nav-link" smooth to="#challengedetails">Challenge Details</HashLink>
                         </li>
                         <li className="nav-item mx-3">
-                            <Link className="nav-link" to="#timeline">Timeline</Link>
+                            <HashLink className="nav-link" smooth to="#timeline">Timeline</HashLink>
                         </li>
                         <li className="nav-item mx-3">
-                            <Link className="nav-link" to="#register">Register</Link>
+                            <HashLink className="nav-link" smooth to="#register">Register</HashLink>
                         </li>
                         <li className="nav-item mx-3">
-                            <Link className="nav-link" to="#portfolio">Gallery</Link>
+                            <HashLink className="nav-link" smooth to="#portfolio">Gallery</HashLink>
                         </li>
                         <li className="nav-item mx-3">
-                            <Link className="nav-link" to="#challenge">Challenge</Link>
+                            <HashLink className="nav-link" smooth to="#challenge">Challenge</HashLink>
                         </li>
                         <li className="nav-item mx-3">
-                            <Link className="nav-link" to="#organizedby">Organized By</Link>
+                            <HashLink className="nav-link" smooth to="#organizedby">Organized By</HashLink>
                         </li>
                         <li className="nav-item mx-3">
-                            <Link className="nav-link" to="#contact">Contact Us</Link>
+                            <HashLink className="nav-link" smooth to="#contact">Contact Us</HashLink>
                         </li>
                     </ul>
                 </div>

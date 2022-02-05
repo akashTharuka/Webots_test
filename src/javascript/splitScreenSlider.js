@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function(){
+
+export const splitScreenSlider = () => {
     let wrapper = document.getElementById('wrapper');
     let topLayer = wrapper.querySelector('.top-section');
     let handleOne = wrapper.querySelector('.handle-one');
@@ -6,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let skew = 0;
     let delta = 0;
 
-    if (wrapper.className.indexOf('skewed') != -1){
+    if (wrapper.className.indexOf('skewed') !== -1){
         skew = 990;
     }
     
@@ -18,6 +19,5 @@ document.addEventListener('DOMContentLoaded', function(){
 
         topLayer.style.width = e.clientX + skew + delta + 'px';
     });
-});
-
+}
 

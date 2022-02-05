@@ -1,12 +1,11 @@
 // reveal-right, reveal-left, reveal-bottom, reveal-rotate, reveal-flip
 // use these class names on elements to use scroll reveal of that type
+import ScrollReveal from 'scrollreveal';
 
 const config = {
     reset: true,
     mobile: true
 };
-
-window.sr = ScrollReveal(config);
 
 const revealLeft = {
     origin   : 'right',
@@ -64,24 +63,28 @@ const revealFlip = {
     easing: 'ease-in-out'
 };
 
-sr.reveal('.reveal-left', revealLeft);
-sr.reveal('.reveal-right', revealRight);
-sr.reveal('.reveal-bottom', revealBottom);
-sr.reveal('.reveal-rotate', revealRotate);
-sr.reveal('.reveal-rotate-400', revealRotate1);
-sr.reveal('.reveal-rotate-600', revealRotate2);
-sr.reveal('.reveal-rotate-800', revealRotate3);
-sr.reveal('.reveal-flip', revealFlip);
+export const handleReveal = () => {
+    const sr = ScrollReveal(config);
+	
+    sr.reveal('.reveal-left', revealLeft);
+    sr.reveal('.reveal-right', revealRight);
+    sr.reveal('.reveal-bottom', revealBottom);
+    sr.reveal('.reveal-rotate', revealRotate);
+    sr.reveal('.reveal-rotate-400', revealRotate1);
+    sr.reveal('.reveal-rotate-600', revealRotate2);
+    sr.reveal('.reveal-rotate-800', revealRotate3);
+    sr.reveal('.reveal-flip', revealFlip);
+
+    var navbar = document.getElementById('navbar');
+    window.onscroll = function(){
+        if (window.scrollY > 80) {
+            navbar.classList.remove('bg-transparent');
+        } else {
+            navbar.classList.add('bg-transparent');
+        }
+    };
+}
 
 // set the navbar background after scrolling
 // does not work
 
-// var navbar = document.getElementById('navbar');
-// window.onscroll = function(){ 
-//     "use strict";
-//     if (window.scrollY > 300) {
-//         navbar.classList.add('nav-colored');
-//     } else {
-//         navbar.classList.remove('nav-colored');
-//     }
-// };

@@ -28,10 +28,9 @@ nav{
     background: var(--background-black);
 }
 
-header{
-    background: url('../src/images/wallpapersden.com_cool-4k-pattern_right_bottom.jpg');
+/* header{
     background-size: cover;
-}
+} */
 
 .logo{
     max-width: 150px;
@@ -301,7 +300,6 @@ header{
 }
 
 .fixed {
-    background-image: url('../img/fixed_background.jpg');
     z-index: -1;
     position: fixed;
     display: block;
