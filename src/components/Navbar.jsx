@@ -3,9 +3,10 @@ import { HashLink } from "react-router-hash-link";
 
 import { images } from '../javascript/imageImports';
 
-const Navbar = () => {
+const Navbar = ({ gameday }) => {
+
     return(
-        <nav id="navbar" className="navbar navbar-expand-xl navbar-dark fixed-top" role="navigation">
+        <nav id="navbar" className={`navbar navbar-expand-xl navbar-dark ${gameday ? '' : 'fixed-top'}`} role="navigation">
             <div className="container-fluid">
                 {/* navbar brand */}
                 <HashLink className="navbar-brand" smooth to="#page-top"><img  className="logo img-fluid" src={images.logo} alt="IESL Robogames 2020" /></HashLink>
@@ -17,7 +18,7 @@ const Navbar = () => {
 
                 {/* navbar links */}
                 <div className="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-                    <ul className="navbar-nav mx-auto">
+                    <ul className={`navbar-nav mx-auto ${gameday ? 'd-none' : ''}`}>
                         <li className="nav-item mx-3">
                             <HashLink className="nav-link" smooth to="#about">About</HashLink>
                         </li>
@@ -41,6 +42,11 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item mx-3">
                             <HashLink className="nav-link" smooth to="#contact">Contact Us</HashLink>
+                        </li>
+                    </ul>
+                    <ul className={`navbar-nav ${gameday ? '' : 'd-none'}`}>
+                        <li className="nav-item mx-3">
+                            <HashLink className="nav-link text-uppercase">Leaderboard</HashLink>
                         </li>
                     </ul>
                 </div>
