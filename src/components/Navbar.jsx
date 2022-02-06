@@ -46,7 +46,10 @@ const Navbar = ({ gameday }) => {
                     </ul>
                     <ul className={`navbar-nav ${gameday ? '' : 'd-none'}`}>
                         <li className="nav-item mx-3">
-                            <HashLink className="nav-link text-uppercase">Leaderboard</HashLink>
+                            <HashLink className="nav-link text-uppercase" to="/">Home</HashLink>
+                        </li>
+                        <li className="nav-item mx-3">
+                            <HashLink className="nav-link text-uppercase" to="#" data-bs-target="#leaderboardTabs" data-bs-toggle="modal" data-bs-dismiss="modal">Leaderboard</HashLink>
                         </li>
                     </ul>
                 </div>

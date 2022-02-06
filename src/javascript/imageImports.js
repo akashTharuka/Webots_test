@@ -16,11 +16,18 @@ import uom from '../images/logos/uom.png';
 import cse from '../images/logos/cse.jpg';
 import slt from '../images/logos/slt.jpg';
 
+import first from '../images/first.png';
+import second from '../images/second.png';
+import third from '../images/third.png';
+import Thumbnail2 from '../images/Thumbnail2.jpg';
+import cup from '../images/Leaderboard_cup.png';
+
 export const images =  {
     logo,
     background,
     bumblebee,
     fixedBackground,
     img_1, img_2, img_3, img_4, img_5, img_6,
-    iesl, uom, cse, slt
+    iesl, uom, cse, slt,
+    first, second, third, Thumbnail2, cup
 }
