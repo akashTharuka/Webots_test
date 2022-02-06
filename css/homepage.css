@@ -5,6 +5,7 @@
     --neon-btn-two: #2196f3;
     --background-black: #000814;
     --background-blue: #021222;
+    --modal-background: #424651;
 }
 
 *{
@@ -30,8 +31,17 @@ nav{
 
 header{
     background: url('../img/wallpapersden.com_cool-4k-pattern_right_bottom.jpg');
-    background-size: cover;
+    /* background-size: cover; */
 }
+
+/* #loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: 1;
+    overflow: visible;
+} */
 
 .logo{
     max-width: 150px;

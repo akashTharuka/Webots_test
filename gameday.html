@@ -1,0 +1,390 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- bootstrap css file -->
+        <link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    
+        <!-- homepage styles -->
+        <link rel="stylesheet" href="css/homepage.css">
+        <link rel="stylesheet" href="css/livestream.css">
+    
+        <title>IESL Robo Games | 21/22</title>
+    </head>
+<body id="page-top" class="body justify-content-center">
+    <div class="content">
+        <!-- navbar -->
+        <nav id="navbar" class="navbar navbar-expand-sm navbar-dark" role="navigation">
+            <div class="container-fluid">
+                <!-- navbar brand -->
+                <a class="navbar-brand" href="#page-top"><img  class="logo img-fluid" src="img/logos/IESL_Logo_2021.png" alt="IESL Robogames 2020"></a>
+
+                <!-- toggle button for mobile nav -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- navbar links -->
+                <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#" data-bs-target="#leaderboardTabs" data-bs-toggle="modal" data-bs-dismiss="modal">Leaderboard</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- live streaming div -->
+        <div class="my-5 mx-auto justify-content-center d-flex livestream" id="live-stream-div">
+            <img class="livestream-img img-fluid " src="/img/Thumbnail2.jpg" alt="" />
+            <!-- <div class="stop-div play-pause">
+                <div class="z-control pause" id="DisconnectButton"></div>
+    
+            </div>
+            <div class="play-div play-pause">
+                <div class="z-control play" id="ConnectButton"></div>
+    
+            </div> -->
+            <div id="playerDiv">
+            </div>
+        </div>
+
+        
+        <!-- popup leaderboard selector -->
+        <div class="modal fade" id="leaderboardTabs" aria-hidden="true" aria-labelledby="leaderboardTabs" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-10 my-2">
+                                <div class="card d-flex leaderboard">
+                                    <div class="row justify-content-center" data-bs-target="#university-leaderboard" data-bs-toggle="modal" data-bs-dismiss="modal">
+                                        <img src="./img/Leaderboard_cup.png" alt="" class="img-fluid leaderboard-cup mx-3 p-2 col-md-5">
+                                        <div class="card-body text-center col-md-7">
+                                            <h5 class="card-title display-6 text-warning">University</h5>
+                                            <span class="lead text-warning">Leaderboard</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-10 my-2">
+                                <div class="card d-flex leaderboard">
+                                    <div class="row justify-content-center" data-bs-target="#school-leaderboard" data-bs-toggle="modal" data-bs-dismiss="modal">
+                                        <img src="./img/Leaderboard_cup.png" alt="" class="img-fluid leaderboard-cup mx-3 p-2 col-md-5">
+                                        <div class="card-body text-center col-md-7">
+                                            <h5 class="card-title display-6 text-warning">School</h5>
+                                            <span class="lead text-warning">Leaderboard</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- popup university leaderboard -->
+        <div class="modal fade" id="university-leaderboard" aria-hidden="true" aria-labelledby="leaderboardTabs" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content leaderboard">
+                    <div class="header">
+                        <h5 class="modal-title display-6 text-muted text-center my-3 p-2 me-5 me-md-0" id="exampleModalToggleLabel">University Leaderboard</h5>
+                        <button type="button" class="btn close-btn p-3 m-1" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="bi bi-door-closed text-danger"></i><span class="text-warning d-none d-md-inline">EXIT</span>
+                        </button>
+                    </div>
+                    <div class="modal-body leaderboard">
+                        <div class="row text-center text-muted justify-content-center">
+                            <div class="col-10 col-sm-4 second leaderboard">
+                                <div class="card my-4 mx-2 mx-md-4">
+                                    <div class="card-body text-light">
+                                        <img src="/img/second.png" alt="second place" class="img-fluid" />
+                                        <h5 class="team-name lead text-uppercase">Robo-sapiens</h5>
+                                        <h6 class="team-university text-muted">University Of Moratuwa</h6>
+                                        <span class="team-score text-success">80 points</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10 col-sm-4 first leaderboard">
+                                <div class="card my-4 mx-2 mx-md-4">
+                                    <div class="card-body text-light">
+                                        <img src="/img/first.png" alt="first place" class="img-fluid" />
+                                        <h5 class="team-name lead text-uppercase">Circuit Breakers</h5>
+                                        <h6 class="team-university text-muted">University Of Moratuwa</h6>
+                                        <span class="team-score text-warning">86 points</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10 col-sm-4 third leaderboard">
+                                <div class="card my-4 mx-2 mx-md-4">
+                                    <div class="card-body text-light">
+                                        <img src="/img/third.png" alt="third place" class="img-fluid" />
+                                        <h5 class="team-name lead text-uppercase">Pitch Black</h5>
+                                        <h6 class="team-university text-muted">University Of Moratuwa</h6>
+                                        <span class="team-score text-primary">75 points</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-4 mx-auto text-muted justify-content-center">
+                            <table class="table align-middle table-dark table-striped table-hover table-borderless col-8 mx-5 text-center">
+                                <thead class="lead text-muted">
+                                    <tr>
+                                        <th scope="col">Rank</th>
+                                        <th scope="col">Teams</th>
+                                        <th scope="col">Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#4</td>
+                                        <td>
+                                            <p class="team-name text-danger">MARS</p>
+                                            <small class="uni-name text-warning">UNIVERSITY OF MORATUWA</small>
+                                        </td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#5</td>
+                                        <td>
+                                            <p class="team-name text-danger">TECHNOLOGIC</p>
+                                            <small class="uni-name text-warning">UNIVERSITY OF MORATUWA</small>
+                                        </td>
+                                        <td>43</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#6</td>
+                                        <td>
+                                            <p class="team-name text-danger">TEAM MOMENTUM</p>
+                                            <small class="uni-name text-warning">UNIVERSITY OF MORATUWA</small>
+                                        </td>
+                                        <td>32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#7</td>
+                                        <td>
+                                            <p class="team-name text-danger">TEAM RAVANA</p>
+                                            <small class="uni-name text-warning">UNIVERSITY OF COLOMBO SCHOOL OF COMPUTING</small>
+                                        </td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#8</td>
+                                        <td>
+                                            <p class="team-name text-danger">CLASSIC</p>
+                                            <small class="uni-name text-warning">UNIVERSITY OF RUHUNA</small>
+                                        </td>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#9</td>
+                                        <td>
+                                            <p class="team-name text-danger">TOSTER</p>
+                                            <small class="uni-name text-warning">UNIVERSITY OF SRI JAYEWARDENEPURA</small>
+                                        </td>
+                                        <td>10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- popup school leaderboard -->
+        <div class="modal fade" id="school-leaderboard" aria-hidden="true" aria-labelledby="leaderboardTabs" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content leaderboard">
+                    <div class="header">
+                        <h5 class="modal-title display-6 text-muted text-center my-3 p-2 me-5 me-md-0" id="exampleModalToggleLabel">School Leaderboard</h5>
+                        <button type="button" class="btn close-btn p-3 m-1" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="bi bi-door-closed text-danger"></i><span class="text-warning d-none d-md-inline">EXIT</span>
+                        </button>
+                    </div>
+                    <div class="modal-body leaderboard">
+                        <div class="row text-center text-muted justify-content-center">
+                            <div class="col-10 col-sm-4 second leaderboard">
+                                <div class="card my-4 mx-2 mx-md-4">
+                                    <div class="card-body text-light">
+                                        <img src="/img/second.png" alt="second place" class="img-fluid" />
+                                        <h5 class="team-name lead text-uppercase">Robo-sapiens</h5>
+                                        <h6 class="team-university text-muted">ROYAL INSTITUTE</h6>
+                                        <span class="team-score text-success">12 points</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10 col-sm-4 first leaderboard">
+                                <div class="card my-4 mx-2 mx-md-4">
+                                    <div class="card-body text-light">
+                                        <img src="/img/first.png" alt="first place" class="img-fluid" />
+                                        <h5 class="team-name lead text-uppercase">TRIX</h5>
+                                        <h6 class="team-university text-muted">MALIYADEVA COLLEGE</h6>
+                                        <span class="team-score text-warning">90 points</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10 col-sm-4 third leaderboard">
+                                <div class="card my-4 mx-2 mx-md-4">
+                                    <div class="card-body text-light">
+                                        <img src="/img/third.png" alt="third place" class="img-fluid" />
+                                        <h5 class="team-name lead text-uppercase">TRC TEAM1</h5>
+                                        <h6 class="team-university text-muted">TAXILA CENTRAL COLLEGE</h6>
+                                        <span class="team-score text-primary">12 points</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-4 mx-auto text-muted justify-content-center">
+                            <table class="table align-middle table-dark table-striped table-hover table-borderless col-8 mx-5 text-center">
+                                <thead class="lead text-muted">
+                                    <tr>
+                                        <th scope="col">Rank</th>
+                                        <th scope="col">Teams</th>
+                                        <th scope="col">Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#4</td>
+                                        <td>
+                                            <p class="team-name text-danger">MARS</p>
+                                            <small class="uni-name text-warning">UNIVERSITY OF MORATUWA</small>
+                                        </td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#5</td>
+                                        <td>
+                                            <p class="team-name text-danger">TECHNOLOGIC</p>
+                                            <small class="uni-name text-warning">UNIVERSITY OF MORATUWA</small>
+                                        </td>
+                                        <td>43</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#6</td>
+                                        <td>
+                                            <p class="team-name text-danger">TEAM MOMENTUM</p>
+                                            <small class="uni-name text-warning">UNIVERSITY OF MORATUWA</small>
+                                        </td>
+                                        <td>32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#7</td>
+                                        <td>
+                                            <p class="team-name text-danger">TEAM RAVANA</p>
+                                            <small class="uni-name text-warning">UNIVERSITY OF COLOMBO SCHOOL OF COMPUTING</small>
+                                        </td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#8</td>
+                                        <td>
+                                            <p class="team-name text-danger">CLASSIC</p>
+                                            <small class="uni-name text-warning">UNIVERSITY OF RUHUNA</small>
+                                        </td>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#9</td>
+                                        <td>
+                                            <p class="team-name text-danger">TOSTER</p>
+                                            <small class="uni-name text-warning">UNIVERSITY OF SRI JAYEWARDENEPURA</small>
+                                        </td>
+                                        <td>10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact section -->
+        <section id="contact" class="my-5 p-4 scroll-margin">
+            <div class="container text-center reveal-bottom">
+                <div class="row text-muted">
+                    <h2 class="topic display-6 section-heading text-white text-uppercase">
+                        Contact Us</h2>
+                    <hr class="my-4">
+                    <div class="col-sm-8 col-md-6 mx-0 text-start">
+                        
+                        <p class="lead text-muted my-4">For further inquiries and clarifications, feel free to contact us.</p>
+                        <address class="lead text-warning my-4">
+                            Department of Computer Science and Engineering,<br />
+                            University of Moratuwa,<br />
+                            Katubedda,<br />
+                            Sri Lanka.
+                        </address>
+
+                        <div class="icons my-4 d-flex">
+                            <a href="https://www.facebook.com/pg/ieslrobogame/" class="me-4"><i class="fab fa-facebook-f"></i></a>
+                            <a href="mailto:rob@cse.mrt.ac.lk" class="me-4"><i class="fas fa-envelope"></i></a>
+                            <a href="https://wa.me/+94715694899" class="me-4"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-8 col-md-6 mx-0 my-4 text-start">
+                        
+                        <form class="my-1">
+                            <label for="email" class="form-label">Email Address:</label>
+                            <div class="input-group mb-2">
+                                <span class="input-group-text">
+                                    <i class="bi bi-envelope-fill text-secondary"></i>
+                                </span>
+                                <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+                                <!-- tooltip -->
+                                <span class="input-group-text">
+                                    <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                                      <i class="bi bi-question-circle text-muted"></i>
+                                    </span>
+                                </span>
+                            </div>
+
+                            <label for="name" class="form-label">Name:</label>
+                            <div class="mb-2 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-person-fill text-secondary"></i>
+                                </span>
+                                <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+                                <!-- tooltip -->
+                                <span class="input-group-text">
+                                    <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                    </span>
+                                </span>
+                            </div>
+
+                            <div class="mb-1 mt-5 form-floating">
+                                <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+                                <label for="query">Your query...</label>
+                            </div>
+                            <div class="mb-4 text-center">
+                                <button type="submit" class="neon-button btn btn-outline-warning py-2 px-5 my-4">Submit</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

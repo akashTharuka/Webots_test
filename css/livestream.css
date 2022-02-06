@@ -1,0 +1,62 @@
+.modal-body,
+.modal-content{
+    background: var(--modal-background);
+}
+
+.modal-body.leaderboard{
+    background: url('/img/wallpapersden.com_cool-4k-pattern_right_bottom.jpg');
+}
+.modal-content.leaderboard .header{
+    background: var(--background-black);
+    position: relative;
+}
+
+img.leaderboard-cup{
+    max-height: 150px;
+    max-width: 100px;
+}
+
+.card.leaderboard{
+    background: url('/img/wallpapersden.com_cool-4k-pattern_right_bottom.jpg');
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.card.leaderboard:hover{
+    transform: scale(1.1);
+}
+
+.card.leaderboard:active{
+    transform: scale(0.98);
+}
+
+.close-btn{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+}
+.bi-door-closed:hover{
+    transform: scale(1.05);
+}
+.bi-door-closed:active{
+    transform: scale(0.95);
+}
+
+.first .card{
+    transform: scale(1.15);
+}
+.leaderboard .card{
+    background: var(--background-black);
+}
+
+.leaderboard img{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.livestream{
+    width: 90vw;
+    height: auto;
+}
