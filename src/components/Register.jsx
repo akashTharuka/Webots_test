@@ -1,7 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Register = () => {
+
+    const calculateTimeLeft = () => {
+        let countDownDate = new Date("Feb 28, 2022 00:00:00").getTime();
+
+        let now = new Date().getTime();
+
+        let difference = countDownDate - now;
+
+        let timeleft = {finished: true}
+
+        if (difference > 0){
+            timeleft = {
+                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+                seconds: Math.floor((difference % (1000 * 60)) / 1000),
+                finished: false
+            };
+        }
+
+        return timeleft;
+    }
+
+    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setTimeLeft(calculateTimeLeft());
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    });
+
+    // console.log(timeLeft);
+
     return(
         <section id="register" className="my-5 p-4 scroll-margin">
             <div className="container my-5">
@@ -17,25 +52,26 @@ const Register = () => {
                     <div className="col-lg-8 mx-auto text-center text-muted reveal-bottom">
                         <hr />
                         <h2 className="clock topic lead section-heading text-danger text-uppercase reveal-rotate">
-                            Registration Closes In:</h2>
+                            {!timeLeft.finished ? 'Registration Closes In:' : 'Registration Closed'}
+                        </h2>
                         <hr />
                     </div>
                 </div>
-                <div className="clock-display row mt-5 justify-content-center">
+                <div className={`clock-display row mt-5 justify-content-center ${!timeLeft.finished ? '' : 'd-none'}`}>
                     <div className="col-sm-2 time-circle text-center reveal-rotate">
-                        <p className="days display-5 text-warning"></p>
+                        <p className="days display-5 text-warning">{ timeLeft.days }</p>
                         <span className="text-danger">days</span>
                     </div>
                     <div className="col-sm-2 time-circle text-center reveal-rotate-400">
-                        <p className="hours display-5 text-warning"></p>
+                        <p className="hours display-5 text-warning">{ timeLeft.hours }</p>
                         <span className="text-danger">hours</span>
                     </div>
                     <div className="col-sm-2 time-circle text-center reveal-rotate-600">
-                        <p className="minutes display-5 text-warning"></p>
+                        <p className="minutes display-5 text-warning">{ timeLeft.minutes }</p>
                         <span className="text-danger">minutes</span>
                     </div>
                     <div className="col-sm-2 time-circle text-center reveal-rotate-800">
-                        <p className="seconds display-5 text-warning"></p>
+                        <p className="seconds display-5 text-warning">{ timeLeft.seconds }</p>
                         <span className="text-danger">seconds</span>
                     </div>
                 </div>
