@@ -2,6 +2,7 @@ import React from 'react';
 
 import { images } from '../javascript/imageImports';
 import Leaderboard from './Leaderboard';
+import Contact from './Contact';
 
 const LiveStream = () => {
 	return(
@@ -57,6 +58,8 @@ const LiveStream = () => {
 
 			<Leaderboard type="University" />
 			<Leaderboard type="School" />
+
+			<Contact />
 		</div>
 	);
 };

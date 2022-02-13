@@ -9,6 +9,7 @@ import Register from './Register';
 import Challenge from './Challenge';
 import Organize from './Organize';
 import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 import { handleReveal } from '../javascript/scrolling';
 
@@ -29,6 +30,7 @@ export class Homepage extends React.Component{
 				<Portfolio />
 				<Challenge />
 				<Organize />
+				<Contact />
 			</div>
 		);
 	}

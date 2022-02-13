@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { Navbar, Homepage, LiveStream, Contact } from './components';
+import { Navbar, Homepage, LiveStream } from './components';
 
 function App() {
 	return (
@@ -19,11 +19,7 @@ function App() {
 					</Switch>
 				</div>
 			</div>
-			<div className="footer">
-				<Contact />
-			</div>
 		</Router>
-		
 	);
 }
 

@@ -3,7 +3,7 @@
 import ScrollReveal from 'scrollreveal';
 
 const config = {
-    reset: true,
+    reset: false,
     mobile: true
 };
 
