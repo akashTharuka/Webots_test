@@ -13,6 +13,12 @@
     "bootstrap-icons": "^1.7.2",
     "jquery": "^3.6.0",
     "magnific-popup": "^1.1.0",
-    "scrollreveal": "^4.0.9"
+    "scrollreveal": "^4.0.9",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "mongodb": "^4.3.0",
+    "mongoose": "^5.9.10",
+    "morgan": "^1.10.0"
   }
 }
