@@ -1,0 +1,145 @@
+#wrapper{
+    position: relative;
+    width: 100%;
+    min-height: 45vw;
+    overflow: hidden;
+}
+
+#about{
+    background-color: transparent;
+}
+
+.layer{
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    overflow: hidden;
+}
+
+.layer .content-wrap{
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+}
+
+.layer .content-body{
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.layer img{
+    position: absolute;
+    width: 33%;
+    height: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-section{
+    background: #181818;
+    z-index: 1;
+}
+
+.bottom-section .content-body{
+    right: 2%;
+}
+
+.bottom-section h1{
+    color: #ffcc33;
+}
+
+.top-section{
+    background: #ffcc33;
+    color: #181818;
+    z-index: 2;
+    width: 50vw;
+}
+
+.top-section .content-body{
+    left: 2%;
+    color: #181818;
+}
+
+.handle-one,
+.handle-two{
+    position: absolute;
+    height: 100%;
+    display: block;
+    background-color: #fdab00;
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+.handle-two{
+    background-color: #181818;
+}
+
+.skewed .handle-one,
+.skewed .handle-two{
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    transform-origin: top;
+}
+
+.skewed .top-section{
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top-section .content-wrap{
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+
+@media only screen and (max-width: 1290px){
+    .layer .content-body{
+        width: 50%;
+        justify-content: center;
+    }
+
+    .layer img{
+        left: 20%;
+    }
+
+    .top-section img{
+        left: 80%;
+    }
+
+    .content-body .topic{
+        font-size: 2rem;
+        letter-spacing: .3rem;
+    }
+
+    .content-body p{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .content-wrap img{
+        display: none;
+    }
+
+    .layer .content-body{
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #wrapper{
+        display: none;
+    }
+}
+
