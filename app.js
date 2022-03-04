@@ -19,7 +19,7 @@ const dbPswAkash = process.env.DB_PSW_AKASH;
 // const dbPswKalana = process.env.DB_PSW_KALANA;
 
 // const dbURI = process.env.DB_URL_2;
-const dbURI = `mongodb+srv://admin:${dbPswAkash}@cluster0.lndvt.mongodb.net/leaderboard?retryWrites=true&w=majority`;
+const dbURI = `mongodb+srv://admin:admin1234@cluster0.lndvt.mongodb.net/leaderboard?retryWrites=true&w=majority`;
 
 // middleware & static files
 app.use(express.urlencoded({ extended: true }));
