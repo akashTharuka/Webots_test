@@ -18,18 +18,14 @@ app.use(express.json());
 const dbPswAkash = process.env.DB_PSW_AKASH;
 const dbPswKalana = process.env.DB_PSW_KALANA;
 
-// const dbURI = `mongodb+srv://Kalana99:${dbPswKalana}@cluster0.lrpxz.mongodb.net/leaderBoards?retryWrites=true&w=majority`;
-const dbURI = `mongodb+srv://admin:${dbPswAkash}@cluster0.lndvt.mongodb.net/leaderboard?retryWrites=true&w=majority`;
+// const dbURI = process.env.DB_URL_2;
+const dbURI = process.env.DB_URL_1;
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-	.then(result => app.listen(5000, () => {
+	.then(result => app.listen(process.env.PORT || 5000, () => {
 		console.log('listening to port 5000');
 	}))
 	.catch(err => console.log(err));
-
-// app.listen(5000, () => {
-//   console.log('listerning to port 5000');
-// });
 
 // register view engine
 app.set('view engine', 'ejs');
@@ -42,12 +38,7 @@ app.use((req, res, next) => {
 	next();
 });
 
-// routes
-// app.get('/', (req, res) => {
-//   res.redirect('/pages');
-// });
 
-// blog routes
 app.use('/leaderboards', leaderboardRoutes);
 
 // 404 page
