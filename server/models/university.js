@@ -7,7 +7,7 @@ const universitySchema = new Schema({
     type: String,
     required: true,
   },
-  uniName: {
+  name: {
     type: String,
     required: true,
   },

@@ -77,8 +77,8 @@ const LiveStream = () => {
 				</div>
 			</div>
 
-			<Leaderboard type="University" leaderBoard={uniLeaderboard} />
-			<Leaderboard type="School" leaderBoard={schoolLeaderboard} />
+			<Leaderboard type="University" leaderboard={uniLeaderboard} />
+			<Leaderboard type="School" leaderboard={schoolLeaderboard} />
 
 			<Contact />
 		</div>

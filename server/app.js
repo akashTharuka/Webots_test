@@ -19,13 +19,13 @@ const dbPswAkash = process.env.DB_PSW_AKASH;
 const dbPswKalana = process.env.DB_PSW_KALANA;
 
 // const dbURI = `mongodb+srv://Kalana99:${dbPswKalana}@cluster0.lrpxz.mongodb.net/leaderBoards?retryWrites=true&w=majority`;
-const dbURI = `mongodb+srv://admin:${dbPswAkash}@cluster0.lndvt.mongodb.net/leadersboard?retryWrites=true&w=majority`;
+const dbURI = `mongodb+srv://admin:${dbPswAkash}@cluster0.lndvt.mongodb.net/leaderboard?retryWrites=true&w=majority`;
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(result => app.listen(5000, () => {
-    console.log('listerning to port 5000');
-  }))
-  .catch(err => console.log(err));
+	.then(result => app.listen(5000, () => {
+		console.log('listening to port 5000');
+	}))
+	.catch(err => console.log(err));
 
 // app.listen(5000, () => {
 //   console.log('listerning to port 5000');
@@ -38,8 +38,8 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 app.use((req, res, next) => {
-  res.locals.path = req.path;
-  next();
+	res.locals.path = req.path;
+	next();
 });
 
 // routes
