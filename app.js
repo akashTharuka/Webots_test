@@ -34,10 +34,6 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 	}))
 	.catch(err => console.log(err));
 
-
-
-// app.use(morgan('dev'));
-
 app.use((req, res, next) => {
 	res.locals.path = req.path;
 	next();
