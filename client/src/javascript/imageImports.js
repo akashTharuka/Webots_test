@@ -3,6 +3,7 @@ import logo from '../images/logos/IESL_Logo_2021.png';
 import background from '../images/wallpapersden.com_cool-4k-pattern_right_bottom.jpg';
 import bumblebee from '../images/bumblebee.png';
 import fixedBackground from '../images/fixed_background.jpg';
+import dashboard_bg from '../images/polygon-scatter.svg';
 
 import img_1 from '../images/portfolio/fullsize/1.jpg';
 import img_2 from '../images/portfolio/fullsize/2.jpg';
@@ -24,7 +25,7 @@ import cup from '../images/Leaderboard_cup.png';
 
 export const images =  {
     logo,
-    background,
+    background, dashboard_bg,
     bumblebee,
     fixedBackground,
     img_1, img_2, img_3, img_4, img_5, img_6,

@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import { Navbar, Homepage, LiveStream } from './components';
+import { Login, Dashboard } from './dashboard_components';
 
 function App() {
 	return (
@@ -15,6 +16,12 @@ function App() {
 						<Route path="/goLive">
 							<Navbar gameday={1} />
 							<LiveStream />
+						</Route>
+						<Route path="/login">
+							<Login />
+						</Route>
+						<Route path="/dashboard">
+							<Dashboard />
 						</Route>
 					</Switch>
 				</div>

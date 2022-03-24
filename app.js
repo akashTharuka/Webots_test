@@ -37,3 +37,4 @@ app.use((req, res, next) => {
 
 
 app.use('/leaderboards', leaderboardRoutes);
+
