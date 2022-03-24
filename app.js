@@ -3,6 +3,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const leaderboardRoutes = require('./routes/leaderboardRoutes');
+const dashboardRoutes = require('./routes/dashboardRoutes');
 
 // environmental variables
 require('dotenv').config();
@@ -37,4 +38,5 @@ app.use((req, res, next) => {
 
 
 app.use('/leaderboards', leaderboardRoutes);
+app.use('/dashboard', dashboardRoutes);
 
