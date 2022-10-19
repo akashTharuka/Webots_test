@@ -1,17 +1,12 @@
 const University = require('../models/university');
 const School = require('../models/school');
 
-const get_uniLeaderboard = async (req, res) => {
-  var result  = await University.find().sort({score: -1});
-  res.send(result);
-}
-
-const get_schoolLeaderboard = async (req, res) => {
-  var result  = await School.find().sort({score: -1});
-  res.send(result);
+const get_leaderboard = async (req, res) => {
+  var universities  = await University.find().sort({score: -1});
+  var schools = await School.find().sort({score: -1});
+  res.send({ universities, schools });
 }
 
 module.exports = {
-  get_uniLeaderboard, 
-  get_schoolLeaderboard,
+  get_leaderboard
 }

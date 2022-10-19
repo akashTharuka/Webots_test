@@ -1,4 +1,4 @@
-import logo from '../images/logos/IESL_Logo_2021.png';
+import logo from '../images/logos/RoboGames Logo.png';
 
 import background from '../images/wallpapersden.com_cool-4k-pattern_right_bottom.jpg';
 import bumblebee from '../images/bumblebee.png';

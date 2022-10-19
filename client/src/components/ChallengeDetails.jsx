@@ -16,8 +16,8 @@ const ChallengeDetails = () => {
                                 and the programming capability. Competitors are expected to provide solutions to the given task by utilizing these tools. Click the below button to download the simulation software without data charge. To find out more
                                 about the software visit the webot site.</p>
                             <div>
-                                <Link className="neon-button-two btn btn-outline-warning p-3 px-5 mt-3 mx-4 btn-lg reveal-bottom" to="#" target="_blank">Download the Software!</Link>
-                                <Link className="neon-button-two btn btn-outline-warning p-3 px-5 mt-3 mx-4 btn-lg reveal-bottom" to="#" target="_blank">Visit the Webot Site!</Link>
+                                {/* <Link className="neon-button-two btn btn-outline-warning p-3 px-5 mt-3 mx-4 btn-lg reveal-bottom" to="#" target="_blank">Download the Software!</Link> */}
+                                <a className="neon-button-two btn btn-outline-warning p-3 px-5 mt-3 mx-4 btn-lg reveal-bottom" href="https://cyberbotics.com/" target="_blank">Visit the Webot Site!</a>
                             </div>
                         </div>
                     </div>
