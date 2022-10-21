@@ -15,7 +15,7 @@ import img_6 from '../images/portfolio/fullsize/6.jpg';
 import iesl from '../images/logos/iesl.gif';
 import uom from '../images/logos/uom.png';
 import cse from '../images/logos/cse.jpg';
-import slt from '../images/logos/slt.jpg';
+import slt from '../images/logos/slt.png';
 
 import first from '../images/first.png';
 import second from '../images/second.png';
