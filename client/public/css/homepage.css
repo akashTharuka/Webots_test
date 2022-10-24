@@ -260,6 +260,11 @@ nav{
     filter: contrast(1.3);
 }
 
+.carousel-item img{
+	max-width: 50%;
+	max-height: 80%;
+}
+
 /* organized by */
 #organizedby{
     background: var(--background-blue);

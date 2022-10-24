@@ -31,8 +31,8 @@ const Organize = () => {
                 <hr className="my-4" />
                 <p className="lead text-muted my-5 reveal-left">Sri Lanka Telecom PLC is the Leading Digital Service provider and the No. 1 broadband and backbone infrastructure services provider in the country. The Company delivers cutting edge digital lifestyle services to all its customer segments.
                     For more information, visit <Link to="https://www.slt.lk">www.slt.lk</Link> </p>
-                <div className="row">
-                    <div className="col-6 col-md-3 m-auto reveal-rotate"><img src={images.iesl} alt="IESL" className="img-fluid fa-file-image" /></div>
+                <div className="row col-md-8 mx-auto">
+                    <div className="col-6 col-md-3 m-auto reveal-rotate"><img src={images.iesl} alt="IESL" className="img-fluid fa-file-image" style={{maxHeight: "150px"}} /></div>
                     <div className="col-6 col-md-3 m-auto reveal-rotate"><img src={images.uom} alt="UOM" className="img-fluid fa-file-image" /></div>
                     <div className="col-6 col-md-3 m-auto reveal-rotate"><img src={images.cse} alt="CSE" className="img-fluid fa-file-image" /></div>
                     <div className="col-6 col-md-3 m-auto reveal-rotate"><img src={images.slt} alt="SLT" className="img-fluid fa-file-image" /></div>

@@ -8,7 +8,7 @@ const Header = () => {
             <div className="container mt-5">
                 <div className="row">
                     <div className="col-10 col-lg-8 mx-auto my-5">
-                        <h1 className="topic text-uppercase display-1">IESL RoboGames 2021</h1>
+                        <h1 className="topic text-uppercase display-1">IESL RoboGames 2022</h1>
                     </div>
                     <div className="col-10 col-lg-8 mx-auto my-3">
                         <figure>
@@ -19,7 +19,7 @@ const Header = () => {
                                 Michael Jordan
                             </figcaption>
                         </figure>
-                        <Link className="neon-button btn btn-outline-warning p-3 px-5 my-5" to="/goLive"> Go Live!  </Link>
+                        <Link className="neon-button btn btn-outline-warning p-3 px-5 my-5" to="/goLive">Go Live!</Link>
                     </div>
                 </div>
             </div>

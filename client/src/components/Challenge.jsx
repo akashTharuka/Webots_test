@@ -14,7 +14,7 @@ const Challenge = () => {
                     </div>
                 </div>
 
-                <div className="row justify-content-between">
+                {/* <div className="row justify-content-between">
 
                     <div className="row mt-5 reveal-flip">
                         <div className="col-lg-8 mx-auto text-center text-muted reveal-bottom">
@@ -62,7 +62,8 @@ const Challenge = () => {
                             Download PDF</Link>
                     </div>
                     
-                </div>
+                </div> */}
+				<div className="lead topic text-uppercase text-warning text-center my-5">Will be available soon!!!</div>
             </div>
         </section>
     );

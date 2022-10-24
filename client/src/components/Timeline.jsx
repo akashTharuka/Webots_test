@@ -6,7 +6,7 @@ const Timeline = () => {
             <div className="row my-5">
                 <div className="col-lg-8 mx-auto text-center text-muted">
                     <h2 className="topic display-6 section-heading text-white text-uppercase">
-                        IESL RoboGames 2021 Event Timeline</h2>
+                        IESL RoboGames 2022 Event Timeline</h2>
                     <hr />
                 </div>
             </div>
