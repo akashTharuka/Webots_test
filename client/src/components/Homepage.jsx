@@ -26,7 +26,7 @@ export class Homepage extends React.Component{
 				<About />
 				<ChallengeDetails />
 				<Timeline />
-				{/* <Register /> */}
+				<Register />
 				<Portfolio />
 				<Challenge />
 				<Organize />

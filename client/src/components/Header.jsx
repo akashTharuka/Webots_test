@@ -9,6 +9,7 @@ const Header = () => {
                 <div className="row">
                     <div className="col-10 col-lg-8 mx-auto my-5">
                         <h1 className="topic text-uppercase display-1">IESL RoboGames 2022</h1>
+						<span>Powered by <img src={images.slt} alt="SLT" className="img-fluid fa-file-image ms-4" style={{height: "50px", width: "130px"}} /></span>
                     </div>
                     <div className="col-10 col-lg-8 mx-auto my-3">
                         <figure>

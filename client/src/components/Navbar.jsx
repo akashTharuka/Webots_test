@@ -28,9 +28,9 @@ const Navbar = ({ gameday }) => {
                         <li className="nav-item mx-3">
                             <HashLink className="nav-link" smooth to="#timeline">Timeline</HashLink>
                         </li>
-                        {/* <li className="nav-item mx-3">
+                        <li className="nav-item mx-3">
                             <HashLink className="nav-link" smooth to="#register">Register</HashLink>
-                        </li> */}
+                        </li>
                         <li className="nav-item mx-3">
                             <HashLink className="nav-link" smooth to="#portfolio">Gallery</HashLink>
                         </li>

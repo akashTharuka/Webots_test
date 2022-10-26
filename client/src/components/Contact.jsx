@@ -1,4 +1,5 @@
 import React from 'react';
+import { images } from '../javascript/imageImports';
 
 const Contact = () => {
     return(
@@ -67,6 +68,10 @@ const Contact = () => {
                         </form>
 
                     </div>
+
+					<div className="footer">
+						<span>Powered by <img src={images.slt} alt="SLT" className="img-fluid fa-file-image ms-4" style={{height: "50px", width: "130px"}} /></span>
+					</div>
                 </div>
             </div>
         </section>
