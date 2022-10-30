@@ -77,6 +77,8 @@ const Portfolio = () => {
                     <div className="carousel-indicators">
                         <button type="button" data-bs-target="#awards2020" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#awards2020" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#awards2020" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#awards2020" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
@@ -84,6 +86,12 @@ const Portfolio = () => {
                         </div>
                         <div className="carousel-item">
                             <img className="img-fluid d-block w-60 mx-auto" src={images.img_8} alt="" />
+                        </div>
+						<div className="carousel-item">
+                            <img className="img-fluid d-block w-60 mx-auto" src={images.img_9} alt="" />
+                        </div>
+                        <div className="carousel-item">
+                            <img className="img-fluid d-block w-60 mx-auto" src={images.img_10} alt="" />
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#awards2020" data-bs-slide="prev">

@@ -12,14 +12,14 @@ const LiveStream = () => {
 
 	const getUniLeaderboard = async () => {
 
-		// const result = await Axios.get('https://robogames-react.herokuapp.com/leaderboards/uni')
-		// setUniLeaderboard(result.data);
+		const result = await Axios.get('https://robogames-react.herokuapp.com/leaderboards/uni')
+		setUniLeaderboard(result.data);
 	}
 
 	const getSchoolLeaderboard = async () => {
 
-		// const result = await Axios.get('https://robogames-react.herokuapp.com/leaderboards/school');
-		// setSchoolLeaderboard(result.data);
+		const result = await Axios.get('https://robogames-react.herokuapp.com/leaderboards/school');
+		setSchoolLeaderboard(result.data);
 	}
 
 	return(
