@@ -46,8 +46,3 @@ app.use('/leaderboards', leaderboardRoutes);
 app.use('/dashboard', dashboardRoutes);
 
 
-app.listen(process.env.PORT || 5000, () => {
-    console.log("Server Started");
-})
-
-
