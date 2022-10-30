@@ -24,10 +24,6 @@ if (process.env.NODE_ENV === 'production'){
 	app.use(express.static('client/build'));
 }
 
-app.listen(process.env.PORT || 5000, () => {
-    console.log('listening to port 5000');
-})
-
 // connect to mongodb and listen
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 	.then(result => app.listen(process.env.PORT || 5000, () => {
@@ -48,4 +44,10 @@ app.use((req, res, next) => {
 
 app.use('/leaderboards', leaderboardRoutes);
 app.use('/dashboard', dashboardRoutes);
+
+
+app.listen(process.env.PORT || 5000, () => {
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+})
+
 
