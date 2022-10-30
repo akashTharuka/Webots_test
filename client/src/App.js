@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 import { Navbar, Homepage, LiveStream } from './components';
 import { Login, Dashboard } from './dashboard_components';
