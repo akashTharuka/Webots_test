@@ -250,6 +250,18 @@ nav{
     top: calc(50% - 3px);
 }
 
+#timeline h5{
+	color: #50B748;
+}
+#timeline p{
+	color: #00B4EB;
+}
+
+/* register */
+.clock-display span{
+	color: #50B748;
+}
+
 
 /* portfolio */
 
@@ -287,6 +299,10 @@ nav{
 .facebook-link:hover{
     color: var(--neon-btn-one);
 }
+
+/* .contact-submit{
+	transform: translateX(250px);
+} */
 
 /* fixed background in challenge section and challenge details section */
 

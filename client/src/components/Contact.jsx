@@ -2,6 +2,32 @@ import React from 'react';
 import { images } from '../javascript/imageImports';
 
 const Contact = () => {
+
+	const avoid = (e) => {
+		e.preventDefault();
+
+		let cursorX = e.clientX;
+		const contactSubmit = e.target;
+		// console.log(cursorX);
+
+		let left = e.target.getBoundingClientRect().left;
+		let right = e.target.getBoundingClientRect().right;
+		let center = left + (right - left)/2;
+		console.log(cursorX);
+		console.log(center);
+
+		if (cursorX < center){
+			contactSubmit.style.transform = `translate(${cursorX - left + 10}px, 0)`;
+		}
+		else{
+			contactSubmit.style.transform = `translate(${-cursorX + left - 10}px, 0)`;
+		}
+	}
+
+	const captured = (e) => {
+		alert("Gotcha :)");
+	}
+
     return(
         <section id="contact" className="my-5 p-4 scroll-margin">
             <div className="container text-center reveal-bottom">
@@ -63,7 +89,7 @@ const Contact = () => {
                                 <label htmlFor="query">Your query...</label>
                             </div>
                             <div className="mb-4 text-center">
-                                <button type="submit" className="neon-button btn btn-outline-warning py-2 px-5 my-4">Submit</button>
+                                <button type="submit" className="contact-submit neon-button btn btn-outline-warning py-2 px-5 my-4" onMouseOver={avoid} onClick={captured}>Submit</button>
                             </div>
                         </form>
 

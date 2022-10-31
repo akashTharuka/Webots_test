@@ -60,19 +60,19 @@ const Register = () => {
                 <div className={`clock-display row mt-5 justify-content-center ${!timeLeft.finished ? '' : 'd-none'}`}>
                     <div className="col-sm-2 time-circle text-center reveal-rotate">
                         <p className="days display-5 text-warning">{ timeLeft.days }</p>
-                        <span className="text-danger">days</span>
+                        <span>days</span>
                     </div>
                     <div className="col-sm-2 time-circle text-center reveal-rotate-400">
                         <p className="hours display-5 text-warning">{ timeLeft.hours }</p>
-                        <span className="text-danger">hours</span>
+                        <span>hours</span>
                     </div>
                     <div className="col-sm-2 time-circle text-center reveal-rotate-600">
                         <p className="minutes display-5 text-warning">{ timeLeft.minutes }</p>
-                        <span className="text-danger">minutes</span>
+                        <span>minutes</span>
                     </div>
                     <div className="col-sm-2 time-circle text-center reveal-rotate-800">
                         <p className="seconds display-5 text-warning">{ timeLeft.seconds }</p>
-                        <span className="text-danger">seconds</span>
+                        <span>seconds</span>
                     </div>
                 </div>
             </div>
