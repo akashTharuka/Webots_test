@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Register = () => {
 
     const calculateTimeLeft = () => {
-        let countDownDate = new Date("Dec 8, 2022 00:00:00").getTime();
+        let countDownDate = new Date("Nov 13, 2022 00:00:00").getTime();
 
         let now = new Date().getTime();
 
