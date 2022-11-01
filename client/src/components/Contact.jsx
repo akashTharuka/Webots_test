@@ -25,7 +25,7 @@ const Contact = () => {
 	}
 
 	const captured = (e) => {
-		alert("Gotcha :)");
+		console.log("Submitted");
 	}
 
     return(
