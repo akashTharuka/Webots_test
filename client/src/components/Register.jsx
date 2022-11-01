@@ -45,7 +45,7 @@ const Register = () => {
                         <h2 className="topic display-6 section-heading text-white text-uppercase">
                             Register</h2>
                         <hr />
-                        <Link className={`neon-button btn btn-outline-warning p-3 px-5 my-5 mx-auto reveal-flip ${!timeLeft.finished ? '' : 'd-none'}`} to="#" target="_blank">Register Now!!!</Link>
+                        <a className={`neon-button btn btn-outline-warning p-3 px-5 my-5 mx-auto reveal-flip ${!timeLeft.finished ? '' : 'd-none'}`} href="https://docs.google.com/forms/d/e/1FAIpQLSdTov_Bw07pc_YQXncAB7Xou6V0qT36eL9AnAFLeooB7ADoaw/viewform " target="_blank">Register Now!!!</a>
                     </div>
                 </div>
                 <div className="row my-5">
