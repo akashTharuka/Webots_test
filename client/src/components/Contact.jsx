@@ -89,7 +89,7 @@ const Contact = () => {
                                 <label htmlFor="query">Your query...</label>
                             </div>
                             <div className="mb-4 text-center">
-                                <button type="submit" className="contact-submit neon-button btn btn-outline-warning py-2 px-5 my-4" onMouseOver={avoid} onClick={captured}>Submit</button>
+                                <button type="submit" className="contact-submit neon-button btn btn-outline-warning py-2 px-5 my-4" >Submit</button>
                             </div>
                         </form>
 
