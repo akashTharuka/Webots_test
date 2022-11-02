@@ -250,10 +250,10 @@ nav{
     top: calc(50% - 3px);
 }
 
-#timeline h5{
+.slt-green{
 	color: #50B748;
 }
-#timeline p{
+.slt-blue{
 	color: #00B4EB;
 }
 
@@ -299,10 +299,6 @@ nav{
 .facebook-link:hover{
     color: var(--neon-btn-one);
 }
-
-/* .contact-submit{
-	transform: translateX(250px);
-} */
 
 /* fixed background in challenge section and challenge details section */
 

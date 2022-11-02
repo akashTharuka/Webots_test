@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 const Register = () => {
 
@@ -45,7 +44,11 @@ const Register = () => {
                         <h2 className="topic display-6 section-heading text-white text-uppercase">
                             Register</h2>
                         <hr />
-                        <a className={`neon-button btn btn-outline-warning p-3 px-5 my-5 mx-auto reveal-flip ${!timeLeft.finished ? '' : 'd-none'}`} href="https://docs.google.com/forms/d/e/1FAIpQLSdTov_Bw07pc_YQXncAB7Xou6V0qT36eL9AnAFLeooB7ADoaw/viewform " target="_blank">Register Now!!!</a>
+						<p className='lead slt-blue'>If you are a robotics enthusiast who is eagerly waiting to showcase your skills, this the best opportunity for you. 
+Even if you are a beginner, we got you covered! The introductory workshop series will get you right on track in no time!
+						</p>
+						<p className='slt-green'>*So hurry up and get your team registered now!*</p>
+                        <a className={`neon-button btn btn-outline-warning p-3 px-5 my-5 mx-auto reveal-flip ${!timeLeft.finished ? '' : 'd-none'}`} href="https://docs.google.com/forms/d/e/1FAIpQLSdTov_Bw07pc_YQXncAB7Xou6V0qT36eL9AnAFLeooB7ADoaw/viewform " target="_blank" rel='noreferrer'>Register Now!!!</a>
                     </div>
                 </div>
                 <div className="row my-5">
@@ -60,19 +63,19 @@ const Register = () => {
                 <div className={`clock-display row mt-5 justify-content-center ${!timeLeft.finished ? '' : 'd-none'}`}>
                     <div className="col-sm-2 time-circle text-center reveal-rotate">
                         <p className="days display-5 text-warning">{ timeLeft.days }</p>
-                        <span>days</span>
+                        <span className='slt-green'>days</span>
                     </div>
                     <div className="col-sm-2 time-circle text-center reveal-rotate-400">
                         <p className="hours display-5 text-warning">{ timeLeft.hours }</p>
-                        <span>hours</span>
+                        <span className='slt-green'>hours</span>
                     </div>
                     <div className="col-sm-2 time-circle text-center reveal-rotate-600">
                         <p className="minutes display-5 text-warning">{ timeLeft.minutes }</p>
-                        <span>minutes</span>
+                        <span className='slt-green'>minutes</span>
                     </div>
                     <div className="col-sm-2 time-circle text-center reveal-rotate-800">
                         <p className="seconds display-5 text-warning">{ timeLeft.seconds }</p>
-                        <span>seconds</span>
+                        <span className='slt-green'>seconds</span>
                     </div>
                 </div>
             </div>
