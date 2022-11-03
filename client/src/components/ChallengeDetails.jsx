@@ -12,7 +12,7 @@ const ChallengeDetails = () => {
                         <div className="col-md-12 mx-auto text-center text-muted">
                             <h2 className="topic display-6 section-heading text-white text-uppercase">Challenge Details</h2>
                             <hr className="light my-4" />
-                            <p className="my-4 text-light">This is the first virtual robot competition to be held in Sri Lanka.The competition is based on a robot simulation software. The software offers a prototyping environment that provides the user with necessary virtual hardware
+                            <p className="my-4 text-light">This competition is based on a robot simulation software. The software offers a prototyping environment that provides the user with necessary virtual hardware
                                 and the programming capability. Competitors are expected to provide solutions to the given task by utilizing these tools. Click the below button to download the simulation software without data charge. To find out more
                                 about the software visit the webot site.</p>
                             <div>
