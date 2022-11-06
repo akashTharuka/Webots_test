@@ -1,6 +1,5 @@
 import React from 'react';
 import { images } from '../javascript/imageImports';
-import { Link } from 'react-router-dom';
 
 const ChallengeDetails = () => {
     return(
@@ -17,7 +16,7 @@ const ChallengeDetails = () => {
                                 about the software visit the webot site.</p>
                             <div>
                                 {/* <Link className="neon-button-two btn btn-outline-warning p-3 px-5 mt-3 mx-4 btn-lg reveal-bottom" to="#" target="_blank">Download the Software!</Link> */}
-                                <a className="neon-button-two btn btn-outline-warning p-3 px-5 mt-3 mx-4 btn-lg reveal-bottom" href="https://cyberbotics.com/" target="_blank">Visit the Webot Site!</a>
+                                <a className="neon-button-two btn btn-outline-warning p-3 px-5 mt-3 mx-4 btn-lg reveal-bottom" href="https://cyberbotics.com/" target="_blank" rel='noreferrer'>Visit the Webot Site!</a>
                             </div>
                         </div>
                     </div>

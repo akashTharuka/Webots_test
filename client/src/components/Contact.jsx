@@ -3,29 +3,30 @@ import { images } from '../javascript/imageImports';
 
 const Contact = () => {
 
-	const avoid = (e) => {
+	// const avoid = (e) => {
+	// 	e.preventDefault();
+
+	// 	let cursorX = e.clientX;
+	// 	const contactSubmit = e.target;
+	// 	// console.log(cursorX);
+
+	// 	let left = e.target.getBoundingClientRect().left;
+	// 	let right = e.target.getBoundingClientRect().right;
+	// 	let center = left + (right - left)/2;
+	// 	console.log(cursorX);
+	// 	console.log(center);
+
+	// 	if (cursorX < center){
+	// 		contactSubmit.style.transform = `translate(${cursorX - left + 10}px, 0)`;
+	// 	}
+	// 	else{
+	// 		contactSubmit.style.transform = `translate(${-cursorX + left - 10}px, 0)`;
+	// 	}
+	// }
+	const handleSubmit = (e) => {
 		e.preventDefault();
 
-		let cursorX = e.clientX;
-		const contactSubmit = e.target;
-		// console.log(cursorX);
-
-		let left = e.target.getBoundingClientRect().left;
-		let right = e.target.getBoundingClientRect().right;
-		let center = left + (right - left)/2;
-		console.log(cursorX);
-		console.log(center);
-
-		if (cursorX < center){
-			contactSubmit.style.transform = `translate(${cursorX - left + 10}px, 0)`;
-		}
-		else{
-			contactSubmit.style.transform = `translate(${-cursorX + left - 10}px, 0)`;
-		}
-	}
-
-	const captured = (e) => {
-		console.log("Submitted");
+		console.log(e.target);
 	}
 
     return(
@@ -55,13 +56,13 @@ const Contact = () => {
 
                     <div className="col-sm-8 col-md-6 mx-0 my-4 text-start">
                         
-                        <form className="my-1">
+                        <form className="my-1 needs-validation">
                             <label htmlFor="email" className="form-label">Email Address:</label>
                             <div className="input-group mb-2">
                                 <span className="input-group-text">
                                     <i className="bi bi-envelope-fill text-secondary"></i>
                                 </span>
-                                <input type="text" id="email" className="form-control" placeholder="e.g. mario@example.com" />
+                                <input type="text" id="email" className="form-control" placeholder="e.g. mario@example.com" required />
                                 {/* tooltip */}
                                 <span className="input-group-text">
                                     <span className="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
@@ -75,7 +76,21 @@ const Contact = () => {
                                 <span className="input-group-text">
                                     <i className="bi bi-person-fill text-secondary"></i>
                                 </span>
-                                <input type="text" id="name" className="form-control" placeholder="e.g. Mario" />
+                                <input type="text" id="name" className="form-control" placeholder="e.g. Mario" required />
+                                {/* tooltip */}
+                                <span className="input-group-text">
+                                    <span className="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
+                                    <i className="bi bi-question-circle text-muted"></i>
+                                    </span>
+                                </span>
+                            </div>
+
+							<label htmlFor="name" className="form-label">Phone:</label>
+                            <div className="mb-2 input-group">
+                                <span className="input-group-text">
+                                    <i className="bi bi-telephone-fill text-secondary"></i>
+                                </span>
+                                <input type="text" id="name" className="form-control" placeholder="e.g. +94 ## ### ####" required />
                                 {/* tooltip */}
                                 <span className="input-group-text">
                                     <span className="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
@@ -85,11 +100,11 @@ const Contact = () => {
                             </div>
 
                             <div className="mb-1 mt-5 form-floating">
-                                <textarea className="form-control" id="query" style={{height: "140px"}} placeholder="query"></textarea>
+                                <textarea className="form-control" id="query" style={{height: "140px"}} placeholder="query" required></textarea>
                                 <label htmlFor="query">Your query...</label>
                             </div>
                             <div className="mb-4 text-center">
-                                <button type="submit" className="contact-submit neon-button btn btn-outline-warning py-2 px-5 my-4" >Submit</button>
+                                <button type="submit" className="contact-submit neon-button btn btn-outline-warning py-2 px-5 my-4" onClick={handleSubmit} >Submit</button>
                             </div>
                         </form>
 
