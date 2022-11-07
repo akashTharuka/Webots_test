@@ -28,6 +28,13 @@ import third from '../images/third.png';
 import Thumbnail2 from '../images/Thumbnail2.jpg';
 import cup from '../images/Leaderboard_cup.png';
 
+import blob1 from '../images/blobs/blob1.svg';
+import blob2 from '../images/blobs/blob2.svg';
+import blob3 from '../images/blobs/blob3.svg';
+import blob4 from '../images/blobs/blob4.svg';
+import blob5 from '../images/blobs/blob5.svg';
+import blob6 from '../images/blobs/blob6.svg';
+
 export const images =  {
     logo,
     background, dashboard_bg,
@@ -35,5 +42,6 @@ export const images =  {
     fixedBackground,
     img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8, img_9, img_10,
     iesl, uom, cse, slt,
-    first, second, third, Thumbnail2, cup
+    first, second, third, Thumbnail2, cup,
+	blob1, blob2, blob3, blob4, blob5, blob6, 
 }

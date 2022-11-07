@@ -38,7 +38,7 @@ const Navbar = ({ gameday }) => {
                             <HashLink className="nav-link" smooth to="#challenge">Challenge</HashLink>
                         </li>
                         <li className="nav-item mx-3">
-                            <HashLink className="nav-link" smooth to="#organizedby">Organized By</HashLink>
+                            <HashLink className="nav-link" smooth to="#FAQs">FAQ's</HashLink>
                         </li>
                         <li className="nav-item mx-3">
                             <HashLink className="nav-link" smooth to="#contact">Contact Us</HashLink>

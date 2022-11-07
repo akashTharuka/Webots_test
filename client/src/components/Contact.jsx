@@ -1,5 +1,6 @@
 import React from 'react';
 import { images } from '../javascript/imageImports';
+import FAQs from './FAQs';
 
 const Contact = () => {
 
@@ -32,9 +33,11 @@ const Contact = () => {
     return(
         <section id="contact" className="my-5 p-4 scroll-margin">
             <div className="container text-center reveal-bottom">
+				<FAQs />
                 <div className="row text-muted">
                     <h2 className="topic display-6 section-heading text-white text-uppercase">
-                        Contact Us</h2>
+                        Contact Us
+					</h2>
                     <hr className="my-4" />
                     <div className="col-sm-8 col-md-6 mx-0 text-start">
                         

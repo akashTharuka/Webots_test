@@ -23,10 +23,10 @@ export class Homepage extends React.Component{
 		return(
 			<div className='main'>
 				<Header />
+				<Register />
 				<About />
 				<ChallengeDetails />
 				<Timeline />
-				<Register />
 				<Portfolio />
 				<Challenge />
 				<Organize />

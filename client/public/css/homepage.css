@@ -257,6 +257,23 @@ nav{
 	color: #00B4EB;
 }
 
+.session-link a{
+	text-decoration: none;
+}
+
+.session-link{
+	opacity: 0.8;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.session-details img{
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+
 /* register */
 .clock-display span{
 	color: #50B748;
@@ -280,6 +297,11 @@ nav{
 /* organized by */
 #organizedby{
     background: var(--background-blue);
+}
+
+/* FAQs */
+.accordion-item{
+	
 }
 
 /* contact section */
