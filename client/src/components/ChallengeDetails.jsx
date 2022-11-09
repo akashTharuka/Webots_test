@@ -18,7 +18,7 @@ const ChallengeDetails = () => {
                             <div>
                                 {/* <Link className="neon-button-two btn btn-outline-warning p-3 px-5 mt-3 mx-4 btn-lg reveal-bottom" to="#" target="_blank">Download the Software!</Link> */}
                                 <a className="col-10 col-lg-4 neon-button-two btn btn-outline-warning p-3 px-5 mt-3 mx-4 btn-lg reveal-bottom" href="https://cyberbotics.com/" target="_blank" rel='noreferrer'>Visit the Webot Site!</a>
-								<a className="col-10 col-lg-4 neon-button-two btn btn-outline-warning p-3 px-5 mt-3 mx-4 btn-lg reveal-bottom" href={webots_setup} target="_blank" rel='noreferrer'>You can do this</a>
+								{/* <a className="col-10 col-lg-4 neon-button-two btn btn-outline-warning p-3 px-5 mt-3 mx-4 btn-lg reveal-bottom" href={webots_setup} target="_blank" rel='noreferrer'>A simple guide for you</a> */}
                             </div>
                         </div>
                     </div>
