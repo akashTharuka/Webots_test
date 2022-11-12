@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Register = () => {
 
     const calculateTimeLeft = () => {
-        let countDownDate = new Date("Nov 11, 2022 10:30:00").getTime();
+        let countDownDate = new Date("Nov 14, 2022 20:30:00").getTime();
 
         let now = new Date().getTime();
 

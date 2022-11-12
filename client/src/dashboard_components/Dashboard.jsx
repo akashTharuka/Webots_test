@@ -1,6 +1,7 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import Axios from 'axios';
+// import { useState, useEffect } from 'react';
+// import Axios from 'axios';
+import TeamSelector from '../components/TeamSelector';
 
 const Dashboard = () => {
 
@@ -20,10 +21,11 @@ const Dashboard = () => {
     return (
         <div className="container-fluid text-white">
             <div className="row add-teams p-4 mx-auto my-3 d-flex">
-                <button className='btn btn-outline-warning mx-2 p-3'>
+                <button className='btn btn-outline-warning mx-2 p-3' data-bs-target="#addTeamTabs" data-bs-toggle="modal" data-bs-dismiss="modal">
                     Add Team
                 </button>
             </div>
+			<TeamSelector />
             <div className="row update-scores">
                 <div className="row uni">
                     <div className="col-10 mx-auto my-4">
