@@ -15,7 +15,7 @@ const Organize = () => {
 
                     <hr className="my-4" />
                     <p className="lead text-muted my-5 reveal-left">This competition is organized by The Institution of Engineers, Sri Lanka (IESL) in collaboration with the Department of Computer Science and Engineering, University of Moratuwa for school students on Robotics Technology. Institution of
-                        Engineers, Sri Lanka (IESL) is the largest and the apex engineering body in the country. Established in 1956, currently it has an active membership around 16,000.The Information Technology and Communications Engineering Sectional Committee
+                        Engineers, Sri Lanka (IESL) is the largest and the apex engineering body in the country. Established in 1956, currently it has an active membership around 16,000.The Information Technology and Computer Engineering Sectional Committee
                         of the IESL organizes this competition annually, to promote robotic technology among school students and to recognize their talents as the next generation of professionals in the country. University of Moratuwa is a leading university
                         in Sri Lanka which consists of four faculties. The Department of Computer Science and Engineering that belongs to the Faculty of Engineering is one of the two departments in Sri Lanka to offer an engineering degree in computer science.
                         Annually the department involves in organizing many events apart from the academic activities in order to improve the ICT knowledge and skills among the young students in Sri Lanka.</p>
