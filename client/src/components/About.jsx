@@ -33,7 +33,7 @@ const About = () => {
                         <div className="content-body mx-lg-4 p-4">
                             <h2 className="topic display-6 section-heading text-dark text-uppercase reveal-left">About IESL Robogames</h2>
                             <hr className="light my-4" />
-                            <p className="my-4 reveal-left">&quot;IESL RoboGames&quot; is an annual competition organized by the Information Technology and Communications Engineering Sectional Committee of the Institution of Engineers, Sri Lanka in collaboration with Department of Computer
+                            <p className="my-4 reveal-left">&quot;IESL RoboGames&quot; is an annual competition organized by the Information Technology and Computer Engineering Sectional Committee of the Institution of Engineers, Sri Lanka in collaboration with Department of Computer
                                 Science and Engineering, University of Moratuwa, with the objective of promoting and recognizing the talents and skills of the next generation of professionals. The competition will be held in two categories; School Category
                                 and Undergraduate Category. For the school category there will be a series of workshops and awareness programs held in order to introduce the concept of robotics into school&apos;s educational activities. This will provide
                                 an opportunity to promote their creativity and improve their learning efficiency, encouraging them to be future engineers and inventors.</p>
@@ -51,7 +51,7 @@ const About = () => {
                     <div className="col-lg-8 mx-auto text-center text-muted reveal-bottom">
                         <h2 className="topic display-6 section-heading text-white text-uppercase">About IESL Robogames</h2>
                         <hr className="light my-4" />
-                        <p className="my-4">&quot;IESL RoboGames&quot; is an annual competition organized by the Information Technology and Communications Engineering Sectional Committee of the Institution of Engineers, Sri Lanka in collaboration with Department of Computer
+                        <p className="my-4">&quot;IESL RoboGames&quot; is an annual competition organized by the Information Technology and Computer Engineering Sectional Committee of the Institution of Engineers, Sri Lanka in collaboration with Department of Computer
                             Science and Engineering, University of Moratuwa, with the objective of promoting and recognizing the talents and skills of the next generation of professionals. The competition will be held in two categories; School Category
                             and Undergraduate Category. For the school category there will be a series of workshops and awareness programs held in order to introduce the concept of robotics into school&apos;s educational activities. This will provide
                             an opportunity to promote their creativity and improve their learning efficiency, encouraging them to be future engineers and inventors.</p>
