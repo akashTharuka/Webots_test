@@ -51,7 +51,7 @@ const Contact = () => {
 
                         <div className="icons my-4 d-flex">
                             <a href="https://www.facebook.com/pg/ieslrobogame" className="me-4"><i className="fab fa-facebook-f"></i></a>
-                            <a href="mailto:rob@cse.mrt.ac.lk" className="me-4"><i className="fas fa-envelope"></i></a>
+                            <a href="mailto:robo@cse.mrt.ac.lk" className="me-4"><i className="fas fa-envelope"></i></a>
                             <a href="https://wa.me/+94772435654" className="me-4"><i className="fab fa-whatsapp"></i></a>
                         </div>
 
