@@ -26,7 +26,7 @@ const Timeline = () => {
                 </div>
 				<div className=" col-10 col-lg-4 session-details text-muted mx-auto">
 					<div className="wrapper d-flex flex-column position-relative">
-						<img src={images.blob2} alt="blob1" className='blob1'/>
+						<img src={images.blob2} alt="blob2" className='blob1'/>
 						<button className='btn btn-transparent session-link px-0 position-absolute d-flex flex-column'>
 							<a className='text-dark fs-6 my-2' href="https://dms.uom.lk/s/9z5E8ymgrF4jdSi" target="_blank" rel='noreferrer'>Recording 01
 								<i className="fa fa-arrow-right ms-3" aria-hidden="true"></i>
@@ -98,6 +98,20 @@ const Timeline = () => {
                     <p className='slt-blue'>Sesson 03: Introduction to Robotics and Webots</p>
 					<small>In this session, the webot platform will be introduced along with the fundamentals of Robotics</small>
                 </div>
+				<div className=" col-10 col-lg-4 session-details text-muted mx-auto">
+					<div className="wrapper d-flex flex-column position-relative">
+						<img src={images.blob3} alt="blob3" className='blob1'/>
+						<button className='btn btn-transparent session-link px-0 position-absolute d-flex flex-column'>
+							<a className='text-dark fs-6 my-2' href="https://dms.uom.lk/s/ALwy4DsagGYgRMf" target="_blank" rel='noreferrer'>Recording 03
+								<i className="fa fa-arrow-right ms-3" aria-hidden="true"></i>
+							</a>
+							{/* <a className='text-dark fs-6 my-2' target="_blank" rel='noreferrer' href={Python_Session} download="Session.pdf">
+								<i className="fa fa-arrow-left me-3" aria-hidden="true"></i>
+								Slides
+							</a> */}
+						</button>
+					</div>
+				</div>
             </div>
 
             {/* path between 3-4 */}
@@ -114,6 +128,20 @@ const Timeline = () => {
             </div>
             {/* fourth section */}
             <div className="row align-items-center justify-content-end how-it-works d-flex">
+				<div className=" col-10 col-lg-4 session-details text-muted mx-auto">
+					<div className="wrapper d-flex flex-column position-relative">
+						<img src={images.blob4} alt="blob4" className='blob1'/>
+						<button className='btn btn-transparent session-link px-0 position-absolute d-flex flex-column'>
+							<a className='text-dark fs-6 my-2' href="https://dms.uom.lk/s/g9y2XDp737W3NWp" target="_blank" rel='noreferrer'>Recording 04
+								<i className="fa fa-arrow-right ms-3" aria-hidden="true"></i>
+							</a>
+							{/* <a className='text-dark fs-6 my-2' target="_blank" rel='noreferrer' href={Python_Session} download="Session.pdf">
+								<i className="fa fa-arrow-left me-3" aria-hidden="true"></i>
+								Slides
+							</a> */}
+						</button>
+					</div>
+				</div>
                 <div className="col-10 col-lg-6 text-end text-muted">
                     <h5 className="display-6 reveal-right slt-green">13<sup>th</sup> November</h5>
                     <p className='slt-blue'>RoboGames Introductory Session</p>
