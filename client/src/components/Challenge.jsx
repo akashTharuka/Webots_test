@@ -42,7 +42,7 @@ const Challenge = () => {
                             Challenge Files</a>
                     </div>
 
-                </div>
+                </div> 
 
                 {/* <div className="row justify-content-between">
 
