@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import Python_Session from '../resources/Python Session Slides.pdf';
+import webots_Session from '../resources/Introduction to Webots.pdf';
 import { images } from '../javascript/imageImports';
 
 const Timeline = () => {
@@ -105,10 +106,10 @@ const Timeline = () => {
 							<a className='text-dark fs-6 my-2' href="https://dms.uom.lk/s/ALwy4DsagGYgRMf" target="_blank" rel='noreferrer'>Recording 03
 								<i className="fa fa-arrow-right ms-3" aria-hidden="true"></i>
 							</a>
-							{/* <a className='text-dark fs-6 my-2' target="_blank" rel='noreferrer' href={Python_Session} download="Session.pdf">
+							<a className='text-dark fs-6 my-2' target="_blank" rel='noreferrer' href={webots_Session} download="Webots_Session.pdf">
 								<i className="fa fa-arrow-left me-3" aria-hidden="true"></i>
 								Slides
-							</a> */}
+							</a>
 						</button>
 					</div>
 				</div>
@@ -135,10 +136,10 @@ const Timeline = () => {
 							<a className='text-dark fs-6 my-2' href="https://dms.uom.lk/s/g9y2XDp737W3NWp" target="_blank" rel='noreferrer'>Recording 04
 								<i className="fa fa-arrow-right ms-3" aria-hidden="true"></i>
 							</a>
-							{/* <a className='text-dark fs-6 my-2' target="_blank" rel='noreferrer' href={Python_Session} download="Session.pdf">
+							<a className='text-dark fs-6 my-2' target="_blank" rel='noreferrer' href={webots_Session} download="Session.pdf">
 								<i className="fa fa-arrow-left me-3" aria-hidden="true"></i>
 								Slides
-							</a> */}
+							</a>
 						</button>
 					</div>
 				</div>
