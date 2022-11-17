@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import challenge_pdf from '../resources/IESL Robogames - Challenge 1.pdf';
-import challenge_zip from '../resources/Robogames_Challenge_1_v2.zip';
+import challenge_zip from '../resources/Robogames_Challenge_1.zip';
 
 const Challenge = () => {
     return(
