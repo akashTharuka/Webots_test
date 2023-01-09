@@ -1,29 +1,32 @@
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { useContext } from 'react';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
-import { Navbar, Homepage, LiveStream } from './components';
+import { Homepage, LiveStream } from './components';
+import { AuthContext } from './context/AuthContext';
 import { Login, Dashboard } from './dashboard_components';
 
 function App() {
+
+	const { currentUser } = useContext(AuthContext);
+
+	const RequireAuth = ({ children }) => {
+		return currentUser ? children : <Navigate to="/login" />;
+	}
+
 	return (
 		<Router>
 			<div className="App">
 				<div id="content">
-					<Switch>
-						<Route exact path="/">
-							<Navbar gameday={0} />
-							<Homepage />
-						</Route>
-						<Route path="/goLive">
-							<Navbar gameday={1} />
-							<LiveStream />
-						</Route>
-						<Route path="/login">
-							<Login />
-						</Route>
-						<Route path="/dashboard">
-							<Dashboard />
-						</Route>
-					</Switch>
+					<Routes>
+						<Route exact path="/" element={<Homepage />} />
+						<Route path="/goLive" element={<LiveStream />} />
+						<Route path="/login" element={<Login />} />
+						<Route path="/dashboard" element={
+							<RequireAuth>
+								<Dashboard />
+							</RequireAuth>
+						} />
+					</Routes>
 				</div>
 			</div>
 		</Router>

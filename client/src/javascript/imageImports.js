@@ -35,6 +35,8 @@ import blob4 from '../images/blobs/blob4.svg';
 import blob5 from '../images/blobs/blob5.svg';
 import blob6 from '../images/blobs/blob6.svg';
 
+import warning from '../images/warning.png';
+
 export const images =  {
     logo,
     background, dashboard_bg,
@@ -44,4 +46,5 @@ export const images =  {
     iesl, uom, cse, slt,
     first, second, third, Thumbnail2, cup,
 	blob1, blob2, blob3, blob4, blob5, blob6, 
+	warning,
 }

@@ -1,0 +1,105 @@
+Date : 2022-11-26 13:09:01
+Directory : d:\WebDev\webots_test
+Total : 60 files,  32655 codes, 152 comments, 412 blanks, all 33219 lines
+
+Languages
++------------------+------------+------------+------------+------------+------------+
+| language         | files      | code       | comment    | blank      | total      |
++------------------+------------+------------+------------+------------+------------+
+| JSON             |          4 |     30,268 |          0 |          4 |     30,272 |
+| JavaScript React |         18 |      1,302 |         85 |        156 |      1,543 |
+| CSS              |          5 |        555 |         45 |        101 |        701 |
+| JavaScript       |         19 |        343 |         13 |         85 |        441 |
+| XML              |         11 |        117 |          0 |         22 |        139 |
+| Markdown         |          1 |         38 |          0 |         33 |         71 |
+| HTML             |          1 |         31 |          8 |         11 |         50 |
+| SCSS             |          1 |          1 |          1 |          0 |          2 |
++------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                   |         60 |     32,655 |        152 |        412 |     33,219 |
+| client                                                              |         48 |     30,899 |        143 |        373 |     31,415 |
+| client\public                                                       |          6 |        586 |         53 |        112 |        751 |
+| client\public\css                                                   |          5 |        555 |         45 |        101 |        701 |
+| client\sass                                                         |          1 |          1 |          1 |          0 |          2 |
+| client\src                                                          |         38 |      1,626 |         89 |        226 |      1,941 |
+| client\src\components                                               |         17 |      1,131 |         82 |        140 |      1,353 |
+| client\src\context                                                  |          2 |         32 |          0 |          9 |         41 |
+| client\src\dashboard_components                                     |          3 |        177 |          3 |         17 |        197 |
+| client\src\images                                                   |         11 |        117 |          0 |         22 |        139 |
+| client\src\images\blobs                                             |         10 |        116 |          0 |         22 |        138 |
+| client\src\javascript                                               |          3 |        126 |          4 |         29 |        159 |
+| controllers                                                         |          3 |         31 |          0 |          7 |         38 |
+| models                                                              |          3 |         61 |          0 |          6 |         67 |
+| routes                                                              |          3 |         16 |          0 |         10 |         26 |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| filename                                                            | language         | code       | comment    | blank      | total      |
++---------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| d:\WebDev\webots_test\app.js                                        | JavaScript       |         28 |          9 |         14 |         51 |
+| d:\WebDev\webots_test\client\README.md                              | Markdown         |         38 |          0 |         33 |         71 |
+| d:\WebDev\webots_test\client\package-lock.json                      | JSON             |     28,604 |          0 |          1 |     28,605 |
+| d:\WebDev\webots_test\client\package.json                           | JSON             |         44 |          0 |          1 |         45 |
+| d:\WebDev\webots_test\client\public\css\dashboard.css               | CSS              |         27 |          2 |          9 |         38 |
+| d:\WebDev\webots_test\client\public\css\homepage.css                | CSS              |        358 |         37 |         57 |        452 |
+| d:\WebDev\webots_test\client\public\css\livestream.css              | CSS              |         49 |          0 |          9 |         58 |
+| d:\WebDev\webots_test\client\public\css\main.min.css                | CSS              |          1 |          6 |          0 |          7 |
+| d:\WebDev\webots_test\client\public\css\splitScreenSlider.css       | CSS              |        120 |          0 |         26 |        146 |
+| d:\WebDev\webots_test\client\public\index.html                      | HTML             |         31 |          8 |         11 |         50 |
+| d:\WebDev\webots_test\client\sass\main.scss                         | SCSS             |          1 |          1 |          0 |          2 |
+| d:\WebDev\webots_test\client\src\App.js                             | JavaScript       |         30 |          0 |          7 |         37 |
+| d:\WebDev\webots_test\client\src\components\About.jsx               | JavaScript React |         60 |          0 |         11 |         71 |
+| d:\WebDev\webots_test\client\src\components\AddTeam.jsx             | JavaScript React |         22 |          0 |          2 |         24 |
+| d:\WebDev\webots_test\client\src\components\Challenge.jsx           | JavaScript React |         44 |         22 |          9 |         75 |
+| d:\WebDev\webots_test\client\src\components\ChallengeDetails.jsx    | JavaScript React |         30 |          3 |          6 |         39 |
+| d:\WebDev\webots_test\client\src\components\Contact.jsx             | JavaScript React |         87 |         20 |         19 |        126 |
+| d:\WebDev\webots_test\client\src\components\FAQs.jsx                | JavaScript React |         86 |          0 |          2 |         88 |
+| d:\WebDev\webots_test\client\src\components\Header.jsx              | JavaScript React |         28 |          1 |          3 |         32 |
+| d:\WebDev\webots_test\client\src\components\Homepage.jsx            | JavaScript React |         34 |          1 |          8 |         43 |
+| d:\WebDev\webots_test\client\src\components\Leaderboard.jsx         | JavaScript React |         86 |          1 |         11 |         98 |
+| d:\WebDev\webots_test\client\src\components\LiveStream.jsx          | JavaScript React |         64 |         10 |         17 |         91 |
+| d:\WebDev\webots_test\client\src\components\Navbar.jsx              | JavaScript React |         52 |          3 |          7 |         62 |
+| d:\WebDev\webots_test\client\src\components\Organize.jsx            | JavaScript React |         43 |          0 |          7 |         50 |
+| d:\WebDev\webots_test\client\src\components\Portfolio.jsx           | JavaScript React |        102 |          0 |         10 |        112 |
+| d:\WebDev\webots_test\client\src\components\Register.jsx            | JavaScript React |         72 |          1 |         14 |         87 |
+| d:\WebDev\webots_test\client\src\components\TeamSelector.jsx        | JavaScript React |         44 |          0 |          6 |         50 |
+| d:\WebDev\webots_test\client\src\components\Timeline.jsx            | JavaScript React |        273 |         20 |          7 |        300 |
+| d:\WebDev\webots_test\client\src\components\index.js                | JavaScript       |          4 |          0 |          1 |          5 |
+| d:\WebDev\webots_test\client\src\context\AuthContext.js             | JavaScript       |         17 |          0 |          8 |         25 |
+| d:\WebDev\webots_test\client\src\context\AuthReducer.js             | JavaScript       |         15 |          0 |          1 |         16 |
+| d:\WebDev\webots_test\client\src\dashboard_components\Dashboard.jsx | JavaScript React |        126 |          1 |          8 |        135 |
+| d:\WebDev\webots_test\client\src\dashboard_components\Login.jsx     | JavaScript React |         49 |          2 |          9 |         60 |
+| d:\WebDev\webots_test\client\src\dashboard_components\index.js      | JavaScript       |          2 |          0 |          0 |          2 |
+| d:\WebDev\webots_test\client\src\images\blobs\blob1.svg             | XML              |         23 |          0 |          4 |         27 |
+| d:\WebDev\webots_test\client\src\images\blobs\blob10.svg            | XML              |          4 |          0 |          1 |          5 |
+| d:\WebDev\webots_test\client\src\images\blobs\blob2.svg             | XML              |         23 |          0 |          4 |         27 |
+| d:\WebDev\webots_test\client\src\images\blobs\blob3.svg             | XML              |         23 |          0 |          4 |         27 |
+| d:\WebDev\webots_test\client\src\images\blobs\blob4.svg             | XML              |         23 |          0 |          4 |         27 |
+| d:\WebDev\webots_test\client\src\images\blobs\blob5.svg             | XML              |          4 |          0 |          1 |          5 |
+| d:\WebDev\webots_test\client\src\images\blobs\blob6.svg             | XML              |          4 |          0 |          1 |          5 |
+| d:\WebDev\webots_test\client\src\images\blobs\blob7.svg             | XML              |          4 |          0 |          1 |          5 |
+| d:\WebDev\webots_test\client\src\images\blobs\blob8.svg             | XML              |          4 |          0 |          1 |          5 |
+| d:\WebDev\webots_test\client\src\images\blobs\blob9.svg             | XML              |          4 |          0 |          1 |          5 |
+| d:\WebDev\webots_test\client\src\images\polygon-scatter.svg         | XML              |          1 |          0 |          0 |          1 |
+| d:\WebDev\webots_test\client\src\index.js                           | JavaScript       |         13 |          0 |          2 |         15 |
+| d:\WebDev\webots_test\client\src\javascript\firebase.js             | JavaScript       |         14 |          0 |          7 |         21 |
+| d:\WebDev\webots_test\client\src\javascript\imageImports.js         | JavaScript       |         40 |          0 |          7 |         47 |
+| d:\WebDev\webots_test\client\src\javascript\scrolling.js            | JavaScript       |         72 |          4 |         15 |         91 |
+| d:\WebDev\webots_test\controllers\dashboardController.js            | JavaScript       |         10 |          0 |          2 |         12 |
+| d:\WebDev\webots_test\controllers\homepageController.js             | JavaScript       |          7 |          0 |          2 |          9 |
+| d:\WebDev\webots_test\controllers\leaderboardController.js          | JavaScript       |         14 |          0 |          3 |         17 |
+| d:\WebDev\webots_test\models\query.js                               | JavaScript       |         23 |          0 |          2 |         25 |
+| d:\WebDev\webots_test\models\school.js                              | JavaScript       |         19 |          0 |          2 |         21 |
+| d:\WebDev\webots_test\models\university.js                          | JavaScript       |         19 |          0 |          2 |         21 |
+| d:\WebDev\webots_test\package-lock.json                             | JSON             |      1,593 |          0 |          1 |      1,594 |
+| d:\WebDev\webots_test\package.json                                  | JSON             |         27 |          0 |          1 |         28 |
+| d:\WebDev\webots_test\routes\dashboardRoutes.js                     | JavaScript       |          5 |          0 |          3 |          8 |
+| d:\WebDev\webots_test\routes\homepageRoutes.js                      | JavaScript       |          5 |          0 |          4 |          9 |
+| d:\WebDev\webots_test\routes\leaderboardRoutes.js                   | JavaScript       |          6 |          0 |          3 |          9 |
+| Total                                                               |                  |     32,655 |        152 |        412 |     33,219 |
++---------------------------------------------------------------------+------------------+------------+------------+------------+------------+

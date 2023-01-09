@@ -1,6 +1,7 @@
 import React from 'react';
 
 // import homepage sections
+import Navbar from './Navbar';
 import  Header  from './Header';
 import About from './About';
 import ChallengeDetails from './ChallengeDetails';
@@ -22,6 +23,7 @@ export class Homepage extends React.Component{
 	render(){
 		return(
 			<div className='main'>
+				<Navbar gameday={0} />
 				<Header />
 				<Register />
 				<About />

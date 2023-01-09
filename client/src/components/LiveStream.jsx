@@ -4,6 +4,7 @@ import Axios from 'axios';
 import { images } from '../javascript/imageImports';
 import Leaderboard from './Leaderboard';
 import Contact from './Contact';
+import Navbar from './Navbar';
 
 const LiveStream = () => {
 
@@ -24,6 +25,7 @@ const LiveStream = () => {
 
 	return(
 		<div>
+			<Navbar gameday={1} />
 			{/* live streaming div */}
 			<div className="my-5 mx-auto justify-content-center d-flex livestream" id="live-stream-div">
 				<img className="livestream-img img-fluid " src={images.Thumbnail2} alt="" />
