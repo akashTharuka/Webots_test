@@ -44,6 +44,28 @@ const Challenge = () => {
 
                 </div> 
 
+				<div className="row justify-content-between">
+
+                    <div className="row mt-5 reveal-flip">
+                        <div className="col-lg-8 mx-auto text-center text-muted reveal-bottom">
+                            <hr />
+                            <h2 className="topic lead section-heading text-white text-uppercase">
+                                Challenge Submission</h2>
+                            <hr />
+                        </div>
+                    </div>
+
+                    <div className="col-lg-6 mx-auto my-3 text-center">
+                        <a className="neon-button-three btn p-3 px-5 mt-3 mx-4 btn-lg reveal-right" href='https://forms.gle/tGKmcUgVJ4DMVR8Z7' target="_blank" rel='noreferrer' download>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Submit</a>
+                    </div>
+
+                </div> 
+
                 {/* <div className="row justify-content-between">
 
                     <div className="row mt-5 reveal-flip">
