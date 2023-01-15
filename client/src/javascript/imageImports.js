@@ -4,6 +4,7 @@ import background from '../images/wallpapersden.com_cool-4k-pattern_right_bottom
 import bumblebee from '../images/bumblebee.png';
 import fixedBackground from '../images/fixed_background.jpg';
 import dashboard_bg from '../images/polygon-scatter.svg';
+import challenge_bg from '../images/challenge_background.jpg';
 
 import img_1 from '../images/portfolio/fullsize/1.jpg';
 import img_2 from '../images/portfolio/fullsize/2.jpg';
@@ -39,7 +40,7 @@ import warning from '../images/warning.png';
 
 export const images =  {
     logo,
-    background, dashboard_bg,
+    background, dashboard_bg, challenge_bg,
     bumblebee,
     fixedBackground,
     img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8, img_9, img_10,

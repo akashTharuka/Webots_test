@@ -44,7 +44,7 @@ const Challenge = () => {
 
                 </div> 
 
-				<div className="row justify-content-between">
+				{/* <div className="row justify-content-between">
 
                     <div className="row mt-5 reveal-flip">
                         <div className="col-lg-8 mx-auto text-center text-muted reveal-bottom">
@@ -64,7 +64,7 @@ const Challenge = () => {
                             Submit</a>
                     </div>
 
-                </div> 
+                </div>  */}
 
                 {/* <div className="row justify-content-between">
 
