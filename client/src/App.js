@@ -5,6 +5,8 @@ import { Homepage, LiveStream } from './components';
 import { AuthContext } from './context/AuthContext';
 import { Login, Dashboard } from './dashboard_components';
 
+import QrReaderComponent from './qr_components/QrReaderComponent';
+
 function App() {
 
 	const { currentUser } = useContext(AuthContext);
@@ -26,6 +28,7 @@ function App() {
 								<Dashboard />
 							</RequireAuth>
 						} />
+                        <Route path="/qr" element={<QrReaderComponent />} />
 					</Routes>
 				</div>
 			</div>
