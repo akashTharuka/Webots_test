@@ -83,7 +83,7 @@ const LiveStream = () => {
 			{/* live streaming div */}
 			<div className="my-5 mx-auto justify-content-center d-flex livestream" id="live-stream-div">
 				{! start ? <img className="livestream-img img-fluid" src={images.challenge_bg} alt="" /> : 
-					<div className="container" style={{maxHeight: "80vh", maxWidth: "80vw"}}>
+					<div className="container">
 						{finished ? <div id="playerDiv" className='ratio ratio-16x9'>
 							<iframe width="560" height="315" src={`${videoUrl}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 						</div> : <div>
