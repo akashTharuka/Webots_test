@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
-import { Homepage, LiveStream } from './components';
+import { Homepage, LiveStream, LeaderboardUni, LeaderboardScl } from './components';
 import { AuthContext } from './context/AuthContext';
 import { Login, Dashboard } from './dashboard_components';
 
@@ -20,6 +20,8 @@ function App() {
 					<Routes>
 						<Route exact path="/" element={<Homepage />} />
 						<Route path="/goLive" element={<LiveStream />} />
+						<Route path="/leaderboard-uni" element={<LeaderboardUni />}/>
+						<Route path="/leaderboard-scl" element={<LeaderboardScl />}/>
 						<Route path="/login" element={<Login />} />
 						<Route path="/dashboard" element={
 							<RequireAuth>

@@ -20,7 +20,7 @@ const Header = () => {
                                 Michael Jordan
                             </figcaption>
                         </figure>
-                        {/* <Link className="neon-button btn btn-outline-warning p-3 px-5 my-5" to="/goLive">Go Live!</Link> */}
+                        <Link className="neon-button btn btn-outline-warning p-3 px-5 my-5" to="/goLive">Go Live!</Link>
                     </div>
                 </div>
             </div>

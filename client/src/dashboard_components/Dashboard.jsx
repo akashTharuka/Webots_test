@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { collection, query, getDocs } from "firebase/firestore";
-import { db } from '../javascript/firebase';
+import { db, realtime_db } from '../javascript/firebase';
+import { ref, onValue } from 'firebase/database';
 import AddTeamModal from './AddTeamModal';
 import EditTeamModal from './EditTeamModal';
 // import { Table } from '@mui/material';

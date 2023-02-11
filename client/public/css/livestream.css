@@ -56,3 +56,7 @@ img.leaderboard-cup{
     width: 90vw;
     height: auto;
 }
+
+.modal-backdrop{
+	display: none;
+}
