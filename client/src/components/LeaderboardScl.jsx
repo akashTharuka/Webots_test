@@ -7,6 +7,7 @@ import { ref, onValue, orderByValue, orderByChild } from 'firebase/database';
 import { images } from '../javascript/imageImports';
 
 import Navbar from './Navbar';
+import Toast from './Toast';
 
 const LeaderboardScl = () => {
 
@@ -56,11 +57,12 @@ const LeaderboardScl = () => {
 	return (
 		<div className="" id={`School-leaderboard`}>
 			<Navbar gameday={1} />
-			
+			{/* <Toast /> */}
             <div className="">
                 <div className="modal-content leaderboard">
                     <div className="header">
                         <h5 className="modal-title display-6 text-muted text-center my-3 p-2 me-5 me-md-0" >School Simulation Leaderboard</h5>
+						<h3 className="lead slt-green m-3">Refresh the page to update the scoreboard</h3>
                         {/* <button type="button" className="btn close-btn p-3 m-1" data-bs-dismiss="modal" aria-label="Close">
                             <i className="bi bi-door-closed text-danger"></i>
                             <span className="text-warning d-none d-md-inline">EXIT</span>
@@ -113,7 +115,7 @@ const LeaderboardScl = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-									{sclData.length ? getRows() : ""}
+									{sclData.length ? getRows() : null}
                                 </tbody>
                             </table>
                         </div>
