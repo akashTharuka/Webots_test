@@ -27,7 +27,7 @@ const LiveStream = () => {
 			setStart(doc.data().timerStart);
 			setTeam(doc.data().team);
 			setVideoUrl(doc.data().url);
-			setTime(`Feb 11, 2023 ${new Date(new Date().getTime() + (doc.data().minutes*60*1000)).toLocaleTimeString()}`);
+			setTime(`Feb 12, 2023 ${new Date(new Date().getTime() + (doc.data().minutes*60*1000)).toLocaleTimeString()}`);
 		});
 		
 	}, []);
